@@ -14,72 +14,23 @@
     "announcement": {
       "type": "announcement",
       "blocks": {
-        "announcement-1": {
-          "type": "announcement",
-          "settings": {
-            "text": "PRE-AUTUMN SALE: UP TO 60% OFF",
-            "link_text": "",
-            "link": ""
-          }
-        },
-        "announcement_U3Tzjd": {
-          "type": "announcement",
-          "settings": {
-            "text": "30-DAY MONEY-BACK GUARANTEE",
-            "link_text": "",
-            "link": ""
-          }
-        },
         "announcement_rJUdAk": {
           "type": "announcement",
           "settings": {
-            "text": "ONLY TODAY FREE SHIPPING ON ALL ORDERS",
+            "text": "25 Year Anniversary Sale: up to 70% off!",
             "link_text": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-1",
-        "announcement_U3Tzjd",
         "announcement_rJUdAk"
       ],
-      "disabled": true,
       "custom_css": [
         ".announcement-bar {font-size: 12px !important; /* Pas aan naar gewenste grootte */}"
       ],
       "settings": {
         "announcement_compact": true
-      }
-    },
-    "scrolling_announcement_bar_9pcDe6": {
-      "type": "scrolling-announcement-bar",
-      "blocks": {
-        "text_KeRyka": {
-          "type": "text",
-          "settings": {
-            "text": "25 Year Anniversary Sale: up to 70% off!"
-          }
-        }
-      },
-      "block_order": [
-        "text_KeRyka"
-      ],
-      "name": "Scrolling announcement bar",
-      "settings": {
-        "insert_css_class_target": "",
-        "text_custom": true,
-        "ss_font_family": "montserrat_n4",
-        "text_size": 12,
-        "link": "",
-        "animation_duration": 160,
-        "animation_direction": "left",
-        "pause_hover": false,
-        "text_color": "#ffffff",
-        "bg": "#000000",
-        "hover_opacity": 0,
-        "padding_vertical": 0.7,
-        "padding_horizontal": 0
       }
     },
     "header": {
@@ -115,7 +66,6 @@
   },
   "order": [
     "announcement",
-    "scrolling_announcement_bar_9pcDe6",
     "header"
   ]
 }
