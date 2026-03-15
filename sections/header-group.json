@@ -55,42 +55,14 @@
     "scrolling_announcement_bar_9pcDe6": {
       "type": "scrolling-announcement-bar",
       "blocks": {
-        "text_VGKLQR": {
-          "type": "text",
-          "settings": {
-            "text": "LIMITED STOCK, ONCE IT'S GONE, IT'S GONE"
-          }
-        },
-        "text_Y9bkwP": {
-          "type": "text",
-          "settings": {
-            "text": "30-DAY RETURN GUARANTEE"
-          }
-        },
-        "text_JxxYDD": {
-          "type": "text",
-          "settings": {
-            "text": "ALWAYS FREE PREMIUM SHIPPING"
-          }
-        },
-        "text_qCeRRG": {
-          "type": "text",
-          "settings": {
-            "text": "ORDER BEFORE 11:00 PM, SHIPPED THE NEXT DAY"
-          }
-        },
         "text_KeRyka": {
           "type": "text",
           "settings": {
-            "text": "ANNIVERSARY SALE ENDS TONIGHT AT 11:59 PM"
+            "text": "25 Year Anniversary Sale: up to 70% off!"
           }
         }
       },
       "block_order": [
-        "text_VGKLQR",
-        "text_Y9bkwP",
-        "text_JxxYDD",
-        "text_qCeRRG",
         "text_KeRyka"
       ],
       "name": "Scrolling announcement bar",
