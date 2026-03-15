@@ -27,7 +27,9 @@
         "announcement_rJUdAk"
       ],
       "custom_css": [
-        ".announcement-bar {font-size: 12px !important; /* Pas aan naar gewenste grootte */}"
+        ".announcement-bar {background-color: #000000 !important; padding: 0 !important;}",
+        ".flickity-viewport {height: 34px !important;}",
+        ".announcement-text {font-size: 11px !important; font-weight: 700 !important; letter-spacing: 0.08em !important; text-transform: uppercase !important; color: #ffffff !important; line-height: 34px !important; white-space: nowrap !important; display: block !important; text-align: center !important;}"
       ],
       "settings": {
         "announcement_compact": true
