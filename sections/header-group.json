@@ -11,6 +11,29 @@
   "type": "header",
   "name": "t:sections.header-group.name",
   "sections": {
+    "advanced_content_MKQBad": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_rrGwdX": {
+          "type": "liquid",
+          "settings": {
+            "code": "<style>\n.lp-top-announcement {\n  background: #000;\n  color: #fff;\n  width: 100%;\n  text-align: center;\n  overflow: hidden;\n}\n\n.lp-top-announcement__inner {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  min-height: 28px;\n  padding: 0 18px;\n}\n\n.lp-top-announcement__text {\n  margin: 0;\n  color: #fff;\n  font-size: 9px;\n  font-weight: 700;\n  line-height: 1;\n  letter-spacing: 0.14em;\n  text-transform: uppercase;\n  white-space: nowrap;\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  text-rendering: geometricPrecision;\n}\n\n@media screen and (min-width: 750px) {\n  .lp-top-announcement__inner {\n    min-height: 42px;\n    padding: 0 24px;\n  }\n\n  .lp-top-announcement__text {\n    font-size: 13px;\n    letter-spacing: 0.12em;\n  }\n}\n</style>\n\n<div class=\"lp-top-announcement\">\n  <div class=\"lp-top-announcement__inner\">\n    <p class=\"lp-top-announcement__text\">25 Year Anniversary Sale: Up To 70% Off!</p>\n  </div>\n</div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_rrGwdX"
+      ],
+      "custom_css": [],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "lazyload_images": false
+      }
+    },
     "announcement": {
       "type": "announcement",
       "blocks": {
@@ -26,10 +49,11 @@
       "block_order": [
         "announcement_rJUdAk"
       ],
+      "disabled": true,
       "custom_css": [
         ".announcement-bar .flickity-viewport {height: 22px !important;}",
-        ".announcement-text {font-size: 9px !important; font-weight: 650 !important; letter-spacing: 0.14em !important; line-height: 22px !important; padding: 0 18px !important;}",
-        "@media (min-width: 750px) {.announcement-bar .flickity-viewport {height: 32px !important; } .announcement-text {font-size: 11px !important; line-height: 32px !important; letter-spacing: 0.12em !important; padding: 0 !important; }}"
+        ".announcement-text {font-size: 9px !important; font-weight: 700 !important; letter-spacing: 0.14em !important; line-height: 22px !important; padding: 0 18px !important;}",
+        "@media (min-width: 750px) {.announcement-bar .flickity-viewport {height: 32px !important; } .announcement-text {font-size: 11px !important; font-weight: 700 !important; line-height: 32px !important; letter-spacing: 0.12em !important; padding: 0 !important; }}"
       ],
       "settings": {
         "announcement_compact": false
@@ -67,6 +91,7 @@
     }
   },
   "order": [
+    "advanced_content_MKQBad",
     "announcement",
     "header"
   ]
