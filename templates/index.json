@@ -177,6 +177,7 @@
       "type": "text-and-image",
       "name": "t:sections.text-and-image.presets.image_with_text.name",
       "settings": {
+        "image": "shopify://shop_images/winkel_grace.png",
         "image_mask": "none",
         "image2_mask": "none",
         "subtitle": "",
