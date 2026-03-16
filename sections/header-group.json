@@ -28,8 +28,8 @@
       ],
       "custom_css": [
         ".announcement-bar .flickity-viewport {height: 22px !important;}",
-        ".announcement-text {font-size: 9px !important; font-weight: 800 !important; letter-spacing: 0.14em !important; line-height: 22px !important; padding: 0 18px !important;}",
-        "@media (min-width: 750px) {.announcement-bar .flickity-viewport {height: 32px !important; } .announcement-text {font-size: 11px !important; line-height: 32px !important; letter-spacing: 0.12em !important; padding: 0 !important; }}"
+        ".announcement-text {font-size: 9px !important; font-weight: 650 !important; letter-spacing: 0.14em !important; line-height: 22px !important; padding: 0 18px !important;}",
+        "@media (min-width: 750px) {.announcement-bar .flickity-viewport {height: 32px !important; } .announcement-text {font-size: 11px !important; font-weight: 650 !important; line-height: 32px !important; letter-spacing: 0.12em !important; padding: 0 !important; }}"
       ],
       "settings": {
         "announcement_compact": false
