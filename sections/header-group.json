@@ -29,7 +29,7 @@
       "custom_css": [
         ".announcement-bar .flickity-viewport {height: 26px !important;}",
         ".announcement-text {font-size: 11px !important; letter-spacing: 0.08em !important; line-height: 26px !important;}",
-        "@media (min-width: 750px) {.announcement-bar .flickity-viewport {height: 43px !important; } .announcement-text {font-size: 13px !important; letter-spacing: 0.13em !important; line-height: 43px !important; }}"
+        "@media (min-width: 750px) {.announcement-bar .flickity-viewport {height: 43px !important; } .announcement-text {font-size: 13px !important; letter-spacing: 0.13em !important; line-height: 33px !important; }}"
       ],
       "settings": {
         "announcement_compact": false
