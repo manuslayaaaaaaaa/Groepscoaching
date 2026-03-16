@@ -85,7 +85,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": false,
-            "text": "<p>At <strong>Lisa & Peter London</strong>, we are already embracing the brand-new autumn collection. We make sure to always provide high-quality products and stylish choices, so you can step into the season looking your best in the latest trends.</p><p>Browse our products below and explore the full collections.</p>"
+            "text": "<p><strong>Lucy & Porter is a family-run boutique in the heart of Boston.</strong><br/><br/>Lucy & Porter began with a mother’s dream 25 years of late-night sewing, handpicked fabrics, and the hope of creating a place where women felt truly seen. Little Porter grew up in the middle of it all, watching her mother pour her heart into every stitch and every customer who walked through the door.</p><p>Now, as Lucy steps back due to her health, Porter is doing everything she can to carry that legacy forward. Every order helps keep their family’s dream alive and honors the devotion that built this boutique from the ground up.</p><p>Thank you for supporting a small family business built with love, resilience, and heart. 🤍✨</p>"
           }
         }
       },
@@ -181,12 +181,12 @@
         "image_mask": "none",
         "image2_mask": "none",
         "subtitle": "",
-        "title": "Meet Pieter & Lisa",
-        "text": "<p>At <strong>Lisa & Peter London</strong>, everything starts with <strong>passion for fashion</strong>. From a young age, Pieter and Lisa shared a lifelong love for style and creativity. Both studied <strong>Fashion Design and Business</strong> before building their careers in the industry. After working for different companies, they came together as a couple and decided to create something of their own.</p><p>Now, more than <strong>10 years later</strong>, they run their store with countless happy clients and inspiring projects. Their mission has always been clear: to stay ahead of <strong>new trends</strong>, deliver <strong>high-quality pieces</strong>, and offer a truly <strong>personal approach</strong>. For Pieter and Lisa, it’s about more than fashion — it’s about making every customer feel seen, valued, and stylish in their own unique way.</p>",
+        "title": "",
+        "text": "<p><strong>Lucy & Porter is a family-run boutique in the heart of Boston.</strong><br/><br/>Lucy & Porter began with a mother’s dream 25 years of late-night sewing, handpicked fabrics, and the hope of creating a place where women felt truly seen. Little Porter grew up in the middle of it all, watching her mother pour her heart into every stitch and every customer who walked through the door.</p><p>Now, as Lucy steps back due to her health, Porter is doing everything she can to carry that legacy forward. Every order helps keep their family’s dream alive and honors the devotion that built this boutique from the ground up.</p><p>Thank you for supporting a small family business built with love, resilience, and heart. 🤍✨</p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
-        "align_text": "left",
+        "align_text": "center",
         "image_width": "50",
         "layout": "right",
         "divider": false,
