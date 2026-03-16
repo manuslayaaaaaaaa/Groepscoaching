@@ -51,8 +51,8 @@
         "header-0"
       ],
       "settings": {
-        "main_menu_link_list": "",
-        "hover_menu": true,
+        "main_menu_link_list": "main-menu",
+        "hover_menu": false,
         "mega_menu_images": true,
         "main_menu_alignment": "center",
         "header_style": "normal",
