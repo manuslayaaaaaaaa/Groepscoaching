@@ -9,6 +9,33 @@
  */
 {
   "sections": {
+    "advanced_content_gEp8Cm": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_RpALFt": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"promo-bar\">\n  <p class=\"promo-bar-text\">Buy 2, Get An Extra 10% Off!</p>\n</div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_RpALFt"
+      ],
+      "custom_css": [
+        ".promo-bar {width: 100%; background: #000; display: flex; justify-content: center; align-items: center;}",
+        ".promo-bar-text {color: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.02em; line-height: 1; padding: 12px 20px; margin: 0; text-align: center;}",
+        "@media (min-width: 750px) {.promo-bar-text {font-size: 14px; padding: 14px 20px; }}"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "lazyload_images": true
+      }
+    },
     "slideshow": {
       "type": "slideshow",
       "blocks": {
@@ -231,6 +258,7 @@
     }
   },
   "order": [
+    "advanced_content_gEp8Cm",
     "slideshow",
     "rich-text",
     "featured-collection",
