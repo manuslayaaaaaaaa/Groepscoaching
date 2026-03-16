@@ -27,9 +27,9 @@
         "announcement_rJUdAk"
       ],
       "custom_css": [
-        ".announcement-bar {background-color: #000000 !important; padding: 6px 0 !important;}",
-        ".flickity-viewport {height: 42px !important;}",
-        ".announcement-text {font-size: 13px !important; font-weight: 700 !important; letter-spacing: 0.12em !important; text-transform: uppercase !important; color: #ffffff !important; line-height: 42px !important; white-space: nowrap !important; display: block !important; text-align: center !important;}"
+        ".announcement-bar .flickity-viewport {height: 26px !important;}",
+        ".announcement-text {font-size: 11px !important; letter-spacing: 0.08em !important; line-height: 26px !important;}",
+        "@media (min-width: 750px) {.announcement-bar .flickity-viewport {height: 43px !important; } .announcement-text {font-size: 13px !important; letter-spacing: 0.13em !important; line-height: 43px !important; }}"
       ],
       "settings": {
         "announcement_compact": false
