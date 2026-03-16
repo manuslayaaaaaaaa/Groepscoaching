@@ -53,7 +53,7 @@
             "color_accent": "#000000",
             "text_align": "vertical-center horizontal-center",
             "image": "shopify://shop_images/Graceandporter.png",
-            "image_mobile": "shopify://shop_images/Ontwerp_zonder_titel_4.png",
+            "image_mobile": "shopify://shop_images/Grace_mobiel.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
