@@ -52,8 +52,10 @@
             "link_text_2": "",
             "color_accent": "#000000",
             "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/Ontwerp_zonder_titel_4.png",
+            "image_mobile": "shopify://shop_images/Ontwerp_zonder_titel_4.png",
             "parallax_direction": "top",
-            "overlay_opacity": 10
+            "overlay_opacity": 0
           }
         }
       },
