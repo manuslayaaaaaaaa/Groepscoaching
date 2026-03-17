@@ -265,6 +265,7 @@
       "type": "text-and-image",
       "name": "t:sections.text-and-image.presets.image_with_text.name",
       "settings": {
+        "image": "shopify://shop_images/Nietmijnpakketstelennigga.png",
         "image_mask": "none",
         "image2_mask": "none",
         "subtitle": "",
@@ -273,8 +274,8 @@
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
-        "align_text": "left",
-        "image_width": "50",
+        "align_text": "center",
+        "image_width": "66",
         "layout": "right",
         "divider": false,
         "top_padding": true,
