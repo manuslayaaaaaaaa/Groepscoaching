@@ -213,7 +213,7 @@
         "testimonial_gjjViq": {
           "type": "testimonial",
           "settings": {
-            "icon": "5-stars",
+            "icon": "4-stars",
             "testimonial": "<p>“Fantastic experience with Grace & Parker. The order arrived quickly and safely, and the quality of the products is top notch. It was a little exciting to order online for the first time, but everything went exactly as expected. I will definitely order again!”</p>",
             "image": "shopify://shop_images/imgi_19_imgi_2_31.avif",
             "author": "Evelyn L.",
@@ -223,7 +223,7 @@
         "testimonial_tJjern": {
           "type": "testimonial",
           "settings": {
-            "icon": "4-stars",
+            "icon": "5-stars",
             "testimonial": "<p>“I like my clothes to be comfortable. I ordered 3 jumpers and they fit perfectly!”</p>",
             "image": "shopify://shop_images/imgi_20_imgi_2_32.avif",
             "author": "Judith C.",
@@ -233,7 +233,7 @@
         "testimonial_X3ga9m": {
           "type": "testimonial",
           "settings": {
-            "icon": "4-stars",
+            "icon": "5-stars",
             "testimonial": "<p>“Have ordered here several times now and each time has been an excellent experience. Products and service are from high quality. Truly a store you can trust!”</p>",
             "image": "shopify://shop_images/imgi_21_imgi_2_30.avif",
             "author": "Elizabeth S.",
