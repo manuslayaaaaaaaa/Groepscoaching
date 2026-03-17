@@ -101,18 +101,6 @@
         "divider": false
       }
     },
-    "featured-collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Very popular at the moment",
-        "home_featured_products": "blazers",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
     "featured_collections_cfHkr4": {
       "type": "featured-collections",
       "blocks": {
@@ -157,22 +145,10 @@
       ],
       "name": "t:sections.featured-collections.presets.collection_list.name",
       "settings": {
-        "title": "MOST LOVED COLLECTIONS",
-        "divider": false,
+        "title": "",
+        "divider": true,
         "per_row": 4,
         "enable_gutter": true
-      }
-    },
-    "580bc108-8f79-4c00-b080-103cccb091ef": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "OUR FAVORITES",
-        "home_featured_products": "footwear",
-        "per_row": 4,
-        "rows": 2,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
       }
     },
     "text_and_image_nfpwGg": {
@@ -195,6 +171,18 @@
         "top_padding": false,
         "bottom_padding": false,
         "lazyload_images": false
+      }
+    },
+    "580bc108-8f79-4c00-b080-103cccb091ef": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Bestsellers",
+        "home_featured_products": "footwear",
+        "per_row": 4,
+        "rows": 2,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": true
       }
     },
     "testimonials_fMUe9F": {
@@ -259,10 +247,10 @@
         "testimonial_WzAyUz"
       ],
       "settings": {
-        "title": "What customers have to say about Lisa & Peter London",
+        "title": "",
         "align_text": "center",
         "round_images": true,
-        "color_background": "#ffffff",
+        "color_background": "#fafafa",
         "color_text": "#1c1d1d"
       }
     },
@@ -275,15 +263,15 @@
         "image2_mask": "none",
         "subtitle": "",
         "title": "Proven Quality, Trusted by Many",
-        "text": "<p>Lucy & Porter isn’t just a brand, it’s a promise. With <strong>150,000 satisfied customers </strong>and recognition in Vogue, we continue to deliver fashion you can trust.</p>",
+        "text": "<p>Grace & Parker isn’t just a brand, it’s a promise. With <strong>150,000 satisfied customers </strong>and recognition in Vogue, we continue to deliver fashion you can trust.</p><p></p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
         "align_text": "center",
         "image_width": "66",
         "layout": "right",
-        "divider": false,
-        "top_padding": true,
+        "divider": true,
+        "top_padding": false,
         "bottom_padding": true,
         "lazyload_images": true
       }
@@ -293,10 +281,9 @@
     "advanced_content_gEp8Cm",
     "slideshow",
     "rich-text",
-    "featured-collection",
     "featured_collections_cfHkr4",
-    "580bc108-8f79-4c00-b080-103cccb091ef",
     "text_and_image_nfpwGg",
+    "580bc108-8f79-4c00-b080-103cccb091ef",
     "testimonials_fMUe9F",
     "text_and_image_DViqR8"
   ]
