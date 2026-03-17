@@ -205,6 +205,7 @@
           "settings": {
             "icon": "5-stars",
             "testimonial": "<p>“My new favorite boutique. Everything feels thoughtfully made and incredibly flattering.”</p>",
+            "image": "shopify://shop_images/imgi_18_d4598049ef5b75283e1d8c099985c88d.avif",
             "author": "Hannah L.",
             "author_info": "Philadelphia"
           }
@@ -214,6 +215,7 @@
           "settings": {
             "icon": "5-stars",
             "testimonial": "<p>“Fantastic experience with Grace & Parker. The order arrived quickly and safely, and the quality of the products is top notch. It was a little exciting to order online for the first time, but everything went exactly as expected. I will definitely order again!”</p>",
+            "image": "shopify://shop_images/imgi_19_imgi_2_31.avif",
             "author": "Evelyn L.",
             "author_info": "New York"
           }
@@ -223,6 +225,7 @@
           "settings": {
             "icon": "4-stars",
             "testimonial": "<p>“I like my clothes to be comfortable. I ordered 3 jumpers and they fit perfectly!”</p>",
+            "image": "shopify://shop_images/imgi_20_imgi_2_32.avif",
             "author": "Judith C.",
             "author_info": "Phoenix"
           }
@@ -232,6 +235,7 @@
           "settings": {
             "icon": "4-stars",
             "testimonial": "<p>“Have ordered here several times now and each time has been an excellent experience. Products and service are from high quality. Truly a store you can trust!”</p>",
+            "image": "shopify://shop_images/imgi_21_imgi_2_30.avif",
             "author": "Elizabeth S.",
             "author_info": "Los Angeles"
           }
@@ -241,6 +245,7 @@
           "settings": {
             "icon": "5-stars",
             "testimonial": "<p>“I was hesitant to spend $150 on a jacket from a website I didn’t know, but I’m so glad I did! The quality is amazing and the fit is perfect. Thanks Grace & Parker!!”</p>",
+            "image": "shopify://shop_images/imgi_22_975bae1c08b94e6dbae3d4b388d4da68.avif",
             "author": "Michelle C.",
             "author_info": "Chicago"
           }
