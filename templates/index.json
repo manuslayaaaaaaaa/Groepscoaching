@@ -77,12 +77,14 @@
       "blocks": {
         "heading": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "title": "Autumn Collection"
           }
         },
         "text": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "enlarge_text": false,
             "text": "<p><strong>Lucy & Porter is a family-run boutique in the heart of Boston.</strong><br/><br/>Lucy & Porter began with a mother’s dream 25 years of late-night sewing, handpicked fabrics, and the hope of creating a place where women felt truly seen. Little Porter grew up in the middle of it all, watching her mother pour her heart into every stitch and every customer who walked through the door.</p><p>Now, as Lucy steps back due to her health, Porter is doing everything she can to carry that legacy forward. Every order helps keep their family’s dream alive and honors the devotion that built this boutique from the ground up.</p><p>Thank you for supporting a small family business built with love, resilience, and heart. 🤍✨</p>"
