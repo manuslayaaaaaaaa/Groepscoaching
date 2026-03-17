@@ -179,12 +179,12 @@
       "type": "text-and-image",
       "name": "t:sections.text-and-image.presets.image_with_text.name",
       "settings": {
-        "image": "shopify://shop_images/winkel_grace.png",
+        "image": "shopify://shop_images/winkel_grace_1.png",
         "image_mask": "none",
         "image2_mask": "none",
         "subtitle": "",
         "title": "",
-        "text": "<p>Grace & Parker is a family-run boutique in the heart of Boston, built with passion, resilience, and a love for timeless style that helps women feel confident and at ease.</p><p>Little Parker gives me the strength to keep going every day. Her joy and curiosity remind me why this dream matters, even when the road isn't easy.</p><p>Right now we're celebrating 25 years. This Anniversary Sale is more than just a sale, it's a moment to honor every woman who has walked through our doors and made this dream possible.</p><p>Whether you're looking for effortless everyday style or something special, now is the time to discover something you'll love.</p><p>With love,<br/><strong>Grace & Parker</strong> 🤍✨</p>",
+        "text": "<p><strong>Grace & Parker is a family-run boutique in the heart of Boston.</strong></p><p>Grace & Parker began with a single dream, to create a place where women could find timeless style and feel truly at ease. Little Parker grew up watching that dream take shape, one carefully chosen piece at a time. Her joy and curiosity are the heartbeat of everything we do here.</p><p>Right now we're celebrating 25 years, and this Anniversary Sale is our way of honoring every woman who has walked through our doors and made this dream possible. Whether you're looking for effortless everyday style or something truly special, now is the time.</p><p>Thank you for supporting a small family business built with love, resilience, and heart. 🤍✨</p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
@@ -192,9 +192,9 @@
         "image_width": "66",
         "layout": "right",
         "divider": false,
-        "top_padding": true,
-        "bottom_padding": true,
-        "lazyload_images": true
+        "top_padding": false,
+        "bottom_padding": false,
+        "lazyload_images": false
       }
     },
     "testimonials_fMUe9F": {
