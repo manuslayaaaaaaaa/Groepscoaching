@@ -260,6 +260,27 @@
         "color_background": "#ffffff",
         "color_text": "#1c1d1d"
       }
+    },
+    "text_and_image_DViqR8": {
+      "type": "text-and-image",
+      "name": "t:sections.text-and-image.presets.image_with_text.name",
+      "settings": {
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Proven Quality, Trusted by Many",
+        "text": "<p>Lucy & Porter isn’t just a brand, it’s a promise. With <strong>150,000 satisfied customers </strong>and recognition in Vogue, we continue to deliver fashion you can trust.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
     }
   },
   "order": [
@@ -270,6 +291,7 @@
     "featured_collections_cfHkr4",
     "580bc108-8f79-4c00-b080-103cccb091ef",
     "text_and_image_nfpwGg",
-    "testimonials_fMUe9F"
+    "testimonials_fMUe9F",
+    "text_and_image_DViqR8"
   ]
 }
