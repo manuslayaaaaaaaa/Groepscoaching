@@ -244,15 +244,6 @@
             "author": "Michelle C.",
             "author_info": "Chicago"
           }
-        },
-        "testimonial_W7FMQc": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "testimonial": "<p>“My package arrived safely and beautifully presented. Lisa & Peter London make online shopping feel truly personal.”</p>",
-            "author": "Helen P.",
-            "author_info": "Liverpool – 5 days ago"
-          }
         }
       },
       "block_order": [
@@ -260,8 +251,7 @@
         "testimonial_gjjViq",
         "testimonial_tJjern",
         "testimonial_X3ga9m",
-        "testimonial_WzAyUz",
-        "testimonial_W7FMQc"
+        "testimonial_WzAyUz"
       ],
       "settings": {
         "title": "What customers have to say about Lisa & Peter London",
