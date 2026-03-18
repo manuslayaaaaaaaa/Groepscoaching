@@ -168,7 +168,7 @@
         "image_width": "66",
         "layout": "right",
         "divider": false,
-        "top_padding": false,
+        "top_padding": true,
         "bottom_padding": false,
         "lazyload_images": false
       }
