@@ -275,6 +275,34 @@
         "bottom_padding": true,
         "lazyload_images": false
       }
+    },
+    "rich_text_dabN9e": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_rFz4BU": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "text_FadFRQ": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_rFz4BU",
+        "text_FadFRQ"
+      ],
+      "name": "t:sections.rich-text.presets.rich_text.name",
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
     }
   },
   "order": [
@@ -285,6 +313,7 @@
     "text_and_image_nfpwGg",
     "580bc108-8f79-4c00-b080-103cccb091ef",
     "testimonials_fMUe9F",
-    "text_and_image_DViqR8"
+    "text_and_image_DViqR8",
+    "rich_text_dabN9e"
   ]
 }
