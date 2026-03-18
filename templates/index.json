@@ -303,6 +303,90 @@
         "narrow_column": true,
         "divider": false
       }
+    },
+    "rich_text_kmG6mT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NGeDQc": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "text_837mPz": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p> </p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NGeDQc",
+        "text_837mPz"
+      ],
+      "name": "t:sections.rich-text.presets.rich_text.name",
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "rich_text_NkbC7k": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Y9AgpW": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "text_c9edfW": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p> </p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Y9AgpW",
+        "text_c9edfW"
+      ],
+      "name": "t:sections.rich-text.presets.rich_text.name",
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "rich_text_KLgiiJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JLWhGY": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "text_BdfL8V": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p> </p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JLWhGY",
+        "text_BdfL8V"
+      ],
+      "name": "t:sections.rich-text.presets.rich_text.name",
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
     }
   },
   "order": [
@@ -313,7 +397,10 @@
     "text_and_image_nfpwGg",
     "580bc108-8f79-4c00-b080-103cccb091ef",
     "testimonials_fMUe9F",
+    "rich_text_kmG6mT",
+    "rich_text_NkbC7k",
     "text_and_image_DViqR8",
-    "rich_text_dabN9e"
+    "rich_text_dabN9e",
+    "rich_text_KLgiiJ"
   ]
 }
