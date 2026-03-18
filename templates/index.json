@@ -270,7 +270,7 @@
         "align_text": "center",
         "image_width": "66",
         "layout": "right",
-        "divider": true,
+        "divider": false,
         "top_padding": true,
         "bottom_padding": false,
         "lazyload_images": true
