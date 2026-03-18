@@ -182,7 +182,7 @@
         "rows": 2,
         "mobile_scrollable": true,
         "view_all": true,
-        "divider": true
+        "divider": false
       }
     },
     "testimonials_fMUe9F": {
@@ -254,56 +254,6 @@
         "color_text": "#1c1d1d"
       }
     },
-    "text_and_image_DViqR8": {
-      "type": "text-and-image",
-      "name": "t:sections.text-and-image.presets.image_with_text.name",
-      "settings": {
-        "image": "shopify://shop_images/Nietmijnpakketstelennigga.png",
-        "image_mask": "none",
-        "image2_mask": "none",
-        "subtitle": "",
-        "title": "Proven Quality, Trusted by Many",
-        "text": "<p>Grace & Parker isn’t just a brand, it’s a promise. With <strong>150,000 satisfied customers </strong>and recognition in Vogue, we continue to deliver fashion you can trust.</p><p></p>",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "primary",
-        "align_text": "center",
-        "image_width": "66",
-        "layout": "right",
-        "divider": false,
-        "top_padding": true,
-        "bottom_padding": true,
-        "lazyload_images": false
-      }
-    },
-    "rich_text_dabN9e": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_rFz4BU": {
-          "type": "heading",
-          "settings": {
-            "title": ""
-          }
-        },
-        "text_FadFRQ": {
-          "type": "text",
-          "settings": {
-            "enlarge_text": true,
-            "text": "<p> </p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_rFz4BU",
-        "text_FadFRQ"
-      ],
-      "name": "t:sections.rich-text.presets.rich_text.name",
-      "settings": {
-        "align_text": "center",
-        "narrow_column": true,
-        "divider": false
-      }
-    },
     "rich_text_kmG6mT": {
       "type": "rich-text",
       "blocks": {
@@ -352,6 +302,56 @@
       "block_order": [
         "heading_Y9AgpW",
         "text_c9edfW"
+      ],
+      "name": "t:sections.rich-text.presets.rich_text.name",
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "text_and_image_DViqR8": {
+      "type": "text-and-image",
+      "name": "t:sections.text-and-image.presets.image_with_text.name",
+      "settings": {
+        "image": "shopify://shop_images/Nietmijnpakketstelennigga.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Proven Quality, Trusted by Many",
+        "text": "<p>Grace & Parker isn’t just a brand, it’s a promise. With <strong>150,000 satisfied customers </strong>and recognition in Vogue, we continue to deliver fashion you can trust.</p><p></p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "66",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": false
+      }
+    },
+    "rich_text_dabN9e": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_rFz4BU": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "text_FadFRQ": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p> </p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rFz4BU",
+        "text_FadFRQ"
       ],
       "name": "t:sections.rich-text.presets.rich_text.name",
       "settings": {
