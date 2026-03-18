@@ -157,7 +157,7 @@
                 {%- case block.type -%}
                   {%- when '@app' -%}
                     {% render block %}
-                                      {%- when 'selluxe_followers' -%}
+                  {%- when 'selluxe_followers' -%}
                     {% render 'selluxe-follower-block',
                       profile_picture_1:block.settings.profile_picture_1,
                       profile_picture_2:block.settings.profile_picture_2,
@@ -198,60 +198,43 @@
                     </div>
                   {%- when 'price' -%}
                     <div class="product-block product-block--price" {{ block.shopify_attributes }}>
-                      {%- assign hide_sale_price = true -%}
-                      {%- if product.compare_at_price_max > product.price -%}
-                        {%- if current_variant.compare_at_price > current_variant.price -%}
-                          {%- assign hide_sale_price = false -%}
-                        {%- endif -%}
-                        <span
-                          data-a11y-price
-                          class="visually-hidden"
-                          aria-hidden="{{ hide_sale_price }}">
-                            {{ 'products.general.regular_price' | t }}
-                        </span>
-                       
-                        <span data-compare-price-a11y class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
-                      {%- else -%}
-                        <span data-a11y-price class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
+                      {%- assign has_compare_price = false -%}
+                      {%- if current_variant.compare_at_price and current_variant.compare_at_price > current_variant.price -%}
+                        {%- assign has_compare_price = true -%}
                       {%- endif -%}
 
-                      <span {% unless current_variant.compare_at_price  %}style="color: #01aa0a; font-weight: 700;"{% endunless %} data-product-price
-                        class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}">
-                        {%- unless product.empty? -%}
-                          {{ current_variant.price | money_with_currency }}
-                        {%- else -%}
-                          {{ 1999 | money }}
-                        {%- endunless -%}
-                      </span>
+                      {%- assign fallback_compare_price = current_variant.price | times: 2 -%}
 
-                      {% assign newkopstorm = current_variant.price | times: 2 %}
-{% unless current_variant.compare_at_price  %}
-                      <span data-product-price-wrap="" class="">
-                          <span data-compare-price="" class="product__price product__price--compare">{{ newkopstorm | money_with_currency }}
-                       </span>
+                      <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;">
+                        <span
+                          data-compare-price
+                          class="product__price product__price--compare"
+                          style="font-family:Outfit,sans-serif;font-size:18px;font-weight:400;line-height:1;color:#000000;text-decoration:line-through;">
+                          {%- if has_compare_price -%}
+                            {{ current_variant.compare_at_price | money }}
+                          {%- else -%}
+                            {{ fallback_compare_price | money }}
+                          {%- endif -%}
                         </span>
-{% endunless %}
-                  
-                      {%- if settings.product_save_amount -%}
-                        {%- if settings.product_save_type == 'dollar' -%}
-                          {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | money }}{%- endcapture -%}
-                        {%- else -%}
-                          {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | times: 100.0 | divided_by: current_variant.compare_at_price | round }}%{%- endcapture -%}
-                        {%- endif -%}
-                        <span data-save-price class="product__price-savings{% if hide_sale_price %} hide{% endif %}">
-                          {%- unless hide_sale_price -%}
-                            {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
+
+                        <span
+                          data-product-price
+                          class="product__price{% if has_compare_price %} on-sale{% endif %}"
+                          style="font-family:Outfit,sans-serif;font-size:24px;font-weight:700;line-height:1;color:#27AE60;">
+                          {%- unless product.empty? -%}
+                            {{ current_variant.price | money }}
+                          {%- else -%}
+                            {{ 1999 | money }}
                           {%- endunless -%}
                         </span>
-                      {%- endif -%}
 
-                       <span data-product-price-wrap class="{% if hide_sale_price %} hide{% endif %}">
-                          <span data-compare-price class="product__price product__price--compare">
-                            {%- if current_variant.compare_at_price > current_variant.price -%}
-                              {{ current_variant.compare_at_price | money_with_currency }}
-                            {%- endif -%}
-                          </span>
+                        <span
+                          data-save-price
+                          class="product__price-savings"
+                          style="font-family:Outfit,sans-serif;font-size:15px;font-weight:400;line-height:1;color:#C20000;text-transform:uppercase;">
+                          ANNIVERSARY SALE!
                         </span>
+                      </div>
 
                       <div
                         data-unit-price-wrapper
@@ -269,8 +252,6 @@
 
                         <span data-unit-price>{{ current_variant.unit_price | money }}</span>/{{ unit_price_base_unit }}
                       </div>
-
-                  <span class="badge" style="background: black; color: white; border-radius: 500px; padding: 5px 10px; font-weight: 700; font-size: 13px;">50% OFF</span>
 
                       {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
                         <div class="product__policies rte small--text-center">
