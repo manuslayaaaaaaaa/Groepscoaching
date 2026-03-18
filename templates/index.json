@@ -146,7 +146,7 @@
       "name": "t:sections.featured-collections.presets.collection_list.name",
       "settings": {
         "title": "",
-        "divider": true,
+        "divider": false,
         "per_row": 4,
         "enable_gutter": true
       }
@@ -168,7 +168,7 @@
         "image_width": "50",
         "layout": "right",
         "divider": false,
-        "top_padding": false,
+        "top_padding": true,
         "bottom_padding": false,
         "lazyload_images": false
       }
