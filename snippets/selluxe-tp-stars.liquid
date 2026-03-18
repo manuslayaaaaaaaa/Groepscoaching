@@ -1,45 +1,50 @@
 <style>
-  .reviews_stars{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    text-decoration:none;
-    color:#000000;
-    margin-bottom:10px;
-  }
-  @media screen and (max-width:749px){
-    .reviews_stars{margin-top:-25px;}
-  }
-  .reviews_stars .stars{
-    position:relative;
-    display:inline-block;
-    line-height:1;
-    font-size:17px;
-    letter-spacing:1px;
-    color:#cccccc;
-    width:max-content;
-  }
-  .reviews_stars .stars-base,
-  .reviews_stars .stars-fill{
-    display:block;
-    white-space:nowrap;
-    font-family:Arial,sans-serif;
-  }
-  .reviews_stars .stars-fill{
-    position:absolute;
-    left:0;
-    top:0;
-    overflow:hidden;
-    color:#ffc502;
-    width:0;
-  }
-  .reviews_stars .ratings span{
-    white-space:nowrap;
-    color:#000000;
-    font-size:15px;
-    line-height:1;
-    font-family:Arial,sans-serif;
-  }
+.reviews_stars{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  text-decoration:none;
+  color:#000000;
+  margin-bottom:10px;
+}
+
+@media screen and (max-width:749px){
+  .reviews_stars{margin-top:-25px;}
+}
+
+.reviews_stars .stars{
+  position:relative;
+  display:inline-block;
+  line-height:1;
+  font-size:16px;
+  letter-spacing:-1px;
+  color:#cccccc;
+  width:max-content;
+  transform:translateY(-1px);
+}
+
+.reviews_stars .stars-base,
+.reviews_stars .stars-fill{
+  display:block;
+  white-space:nowrap;
+  font-family:Arial,sans-serif;
+}
+
+.reviews_stars .stars-fill{
+  position:absolute;
+  left:0;
+  top:0;
+  overflow:hidden;
+  color:#ffc502;
+  width:0;
+}
+
+.reviews_stars .ratings span{
+  white-space:nowrap;
+  color:#000000;
+  font-size:14px;
+  font-family:Arial,sans-serif;
+}
 </style>
 
 <a href="#aus-tp-slider" class="reviews_stars" {{ block.shopify_attributes }}>
@@ -53,17 +58,20 @@
 </a>
 
 <script>
-  (function(){
-    const block = document.currentScript.previousElementSibling;
-    if(!block) return;
-    const stars = block.querySelector('.stars');
-    const fill = block.querySelector('.stars-fill');
-    if(!stars || !fill) return;
+(function(){
+  const block = document.currentScript.previousElementSibling;
+  if(!block) return;
 
-    let rating = parseFloat(stars.dataset.rating || '0');
-    if(isNaN(rating)) rating = 0;
-    rating = Math.max(0, Math.min(5, rating));
+  const stars = block.querySelector('.stars');
+  const fill = block.querySelector('.stars-fill');
 
-    fill.style.width = (rating / 5 * 100) + '%';
-  })();
+  if(!stars || !fill) return;
+
+  let rating = parseFloat(stars.dataset.rating || '0');
+  if(isNaN(rating)) rating = 0;
+
+  rating = Math.max(0, Math.min(5, rating));
+
+  fill.style.width = (rating / 5 * 100) + '%';
+})();
 </script>
