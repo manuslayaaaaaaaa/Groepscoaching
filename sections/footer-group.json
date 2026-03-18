@@ -28,7 +28,7 @@
           "settings": {
             "show_footer_title": false,
             "menu": "linkjes",
-            "container_width": 21
+            "container_width": 20
           }
         },
         "16f46420-be73-4503-875a-4e9c1c8d139e": {
@@ -37,7 +37,7 @@
             "show_footer_title": false,
             "title": "",
             "text": "<p><strong>STORE HOURS</strong></p><p><strong>Mon - Sat:</strong> 11 AM - 7 PM</p><p><strong>Sunday:</strong> 11 AM - 6 PM</p><p>📍 Boston</p>",
-            "container_width": 15
+            "container_width": 30
           }
         },
         "footer-1": {
