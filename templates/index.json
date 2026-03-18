@@ -182,7 +182,7 @@
         "rows": 2,
         "mobile_scrollable": true,
         "view_all": true,
-        "divider": true
+        "divider": false
       }
     },
     "testimonials_fMUe9F": {
