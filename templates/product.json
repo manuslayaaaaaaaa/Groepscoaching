@@ -45,10 +45,10 @@
         "selluxe_tp_stars_PKy6qi": {
           "type": "selluxe_tp_stars",
           "settings": {
-            "tp_star_color": "#00b77f",
-            "tp_rating": 4.5,
+            "tp_star_color": "#ffc502",
+            "tp_rating": 4.7,
             "tp_reviews": 0,
-            "review_text": "4.5 Out of 3.172+"
+            "review_text": "4.7 / 5 Rated (3728+ reviews)"
           }
         },
         "price": {
