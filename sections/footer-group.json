@@ -35,8 +35,8 @@
         "footer-1": {
           "type": "menu",
           "settings": {
-            "show_footer_title": true,
-            "menu": "",
+            "show_footer_title": false,
+            "menu": "footer-1",
             "container_width": 30
           }
         }
