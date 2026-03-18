@@ -2,32 +2,34 @@
 .reviews_stars{
   display:flex;
   align-items:center;
-  gap:6px;
+  gap:8px;
   text-decoration:none;
-  color:#000000;
-  margin-bottom:10px;
+  color:#000;
+  margin:0 0 10px;
 }
 
 @media screen and (max-width:749px){
-  .reviews_stars{margin-top:-25px;}
+  .reviews_stars{
+    margin-top:0;
+    margin-bottom:10px;
+  }
 }
 
 .reviews_stars .stars{
   position:relative;
   display:inline-block;
+  font-size:21px;
   line-height:1;
-  font-size:16px;
-  letter-spacing:-1px;
   color:#cccccc;
-  width:max-content;
-  transform:translateY(-1px);
+  white-space:nowrap;
+  font-family:Arial,sans-serif;
 }
 
 .reviews_stars .stars-base,
 .reviews_stars .stars-fill{
   display:block;
   white-space:nowrap;
-  font-family:Arial,sans-serif;
+  letter-spacing:1px;
 }
 
 .reviews_stars .stars-fill{
@@ -39,10 +41,16 @@
   width:0;
 }
 
+.reviews_stars .ratings{
+  display:flex;
+  align-items:center;
+}
+
 .reviews_stars .ratings span{
   white-space:nowrap;
   color:#000000;
-  font-size:14px;
+  font-size:15px;
+  line-height:1.1;
   font-family:Arial,sans-serif;
 }
 </style>
@@ -59,17 +67,15 @@
 
 <script>
 (function(){
-  const block = document.currentScript.previousElementSibling;
-  if(!block) return;
+  const root = document.currentScript.previousElementSibling;
+  if(!root) return;
 
-  const stars = block.querySelector('.stars');
-  const fill = block.querySelector('.stars-fill');
-
+  const stars = root.querySelector('.stars');
+  const fill = root.querySelector('.stars-fill');
   if(!stars || !fill) return;
 
-  let rating = parseFloat(stars.dataset.rating || '0');
-  if(isNaN(rating)) rating = 0;
-
+  let rating = parseFloat(stars.getAttribute('data-rating') || '0');
+  if (isNaN(rating)) rating = 0;
   rating = Math.max(0, Math.min(5, rating));
 
   fill.style.width = (rating / 5 * 100) + '%';
