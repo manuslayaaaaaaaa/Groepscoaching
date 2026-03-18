@@ -289,7 +289,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": ""
+            "text": "<p> </p>"
           }
         }
       },
