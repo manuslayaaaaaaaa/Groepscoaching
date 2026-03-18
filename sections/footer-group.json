@@ -23,6 +23,14 @@
             "container_width": 31
           }
         },
+        "menu_9YJJxf": {
+          "type": "menu",
+          "settings": {
+            "show_footer_title": false,
+            "menu": "linkjes",
+            "container_width": 25
+          }
+        },
         "16f46420-be73-4503-875a-4e9c1c8d139e": {
           "type": "custom",
           "settings": {
@@ -43,6 +51,7 @@
       },
       "block_order": [
         "4e942b48-8a32-4d0c-bb8a-599029d7c631",
+        "menu_9YJJxf",
         "16f46420-be73-4503-875a-4e9c1c8d139e",
         "footer-1"
       ],
