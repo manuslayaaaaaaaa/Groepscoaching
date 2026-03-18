@@ -165,10 +165,10 @@
         "button_link": "",
         "button_style": "primary",
         "align_text": "center",
-        "image_width": "66",
+        "image_width": "50",
         "layout": "right",
         "divider": false,
-        "top_padding": true,
+        "top_padding": false,
         "bottom_padding": false,
         "lazyload_images": false
       }
@@ -182,7 +182,7 @@
         "rows": 2,
         "mobile_scrollable": true,
         "view_all": true,
-        "divider": false
+        "divider": true
       }
     },
     "testimonials_fMUe9F": {
@@ -272,8 +272,8 @@
         "layout": "right",
         "divider": false,
         "top_padding": true,
-        "bottom_padding": false,
-        "lazyload_images": true
+        "bottom_padding": true,
+        "lazyload_images": false
       }
     }
   },
