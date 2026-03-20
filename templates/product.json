@@ -59,10 +59,13 @@
           "type": "separator",
           "settings": {}
         },
-        "custom_XFhatC": {
-          "type": "custom",
+        "a87f6976-fdca-403c-9377-eb85cc84bccd": {
+          "type": "variant_picker",
           "settings": {
-            "code": "<div class=\"cus-gua-div\">\n  <div class=\"gua-inner\">\n    <div class=\"gua-icon\">\n      <svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-truck\" viewBox=\"0 0 64 64\"><defs><style>.a{stroke-miterlimit:10}</style></defs><path class=\"a\" d=\"M16.5 43.22H6.88V16.5h33.14v26.72H23.94m21.48 0h-5.4V30.4h17.1v12.82h-4.23m4.23-12.82-6.41-8.56H40.02\"/><circle class=\"a\" cx=\"20.24\" cy=\"43.76\" r=\"3.74\"/><path class=\"a\" d=\"M45.42 43.23a3.82 3.82 0 1 1 0 .37v-.37\"/></svg>\n    </div>\n    <p class=\"cus-gua-p\">Free Shipping with UPS</p>\n  </div>\n\n  <div class=\"gua-inner\">\n    <div class=\"gua-icon\">\n      <svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-circle-checkmark\" viewBox=\"0 0 64 64\"><path d=\"M52.68 24.48A22 22 0 1 1 47 15.93\"/><path d=\"m21 32 8.5 8.5L57 13\"/></svg>\n    </div>\n    <p class=\"cus-gua-p\">30-Day Money-Back Guarantee</p>\n  </div>\n\n  <div class=\"gua-inner\">\n    <div class=\"gua-icon\">\n      <svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-lock\" viewBox=\"0 0 64 64\"><path d=\"M19.45 23.6v-3.2c0-7 5.89-11.75 12.55-11.75 7.21 0 12.55 5.49 12.55 11.75v3.2M10 23.6h44v31.75H10zm22 13.87v7.47\"/><circle cx=\"32\" cy=\"35.87\" r=\"1.6\"/></svg>\n    </div>\n    <p class=\"cus-gua-p\">Pay securely with Credit Card</p>\n  </div>\n</div>\n\n<style>\n  .cus-gua-div {\n    margin: 20px 0;\n    display: flex;\n    flex-direction: column;\n    gap: 10px;\n  }\n\n  .gua-inner {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n  }\n\n  .gua-icon {\n    width: 21px;\n    height: 21px;\n    flex: 0 0 21px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  .gua-icon svg,\n  .gua-icon img {\n    width: 21px;\n    height: 21px;\n    display: block;\n  }\n\n  .cus-gua-p {\n    margin: 0;\n    line-height: 21px;\n    color: #000000;\n    font-size: 14px;\n  }\n</style>"
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": true
           }
         },
         "custom_C8JCa3": {
@@ -71,13 +74,14 @@
             "code": "<div class=\"product-block selluxe-sales-point selluxe_sales_point_kVd34U\" data-stock-init=\"false\">\n  <style data-shopify=\"\">\n    .selluxe_sales_point_kVd34U {\n      display: flex;\n      align-items: center;\n      gap: 8px;\n      width: 100%;\n      padding: 0;\n      margin: 0 0 20px;\n      border-radius: 0;\n      background: transparent;\n      contain: layout style;\n    }\n\n    .selluxe_sales_point_kVd34U .icon {\n      width: 16px;\n      height: 16px;\n      min-width: 16px;\n      position: relative;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      color: #ffa503;\n      flex-shrink: 0;\n    }\n\n    .selluxe_sales_point_kVd34U .icon .dot-icon {\n      position: absolute;\n      width: 10px;\n      height: 10px;\n    }\n\n    .selluxe_sales_point_kVd34U .icon .dot-icon.dot-animated {\n      animation: pulse 2s infinite;\n    }\n\n    .selluxe_sales_point_kVd34U .text {\n      display: flex;\n      align-items: center;\n      line-height: 1;\n    }\n\n    .selluxe_sales_point_kVd34U .text span {\n      font-family: 'Outfit', sans-serif;\n      font-size: 16px;\n      font-weight: 400;\n      color: #000000;\n      line-height: 1.3;\n      letter-spacing: 0;\n      white-space: nowrap;\n    }\n\n    .selluxe_sales_point_kVd34U .stock-number {\n      display: inline-block;\n      min-width: 1ch;\n      text-align: center;\n      font: inherit;\n      color: inherit;\n    }\n\n    @keyframes pulse {\n      0% {\n        transform: scale(1);\n        opacity: 0.9;\n      }\n      100% {\n        transform: scale(2.2);\n        opacity: 0;\n      }\n    }\n  </style>\n\n  <div class=\"icon\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"#ffa503\" class=\"dot-icon dot-animated\">\n      <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n    </svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"#ffa503\" class=\"dot-icon\">\n      <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n    </svg>\n  </div>\n\n  <div class=\"text\">\n    <span>Only <span class=\"stock-number\">8</span> in stock</span>\n  </div>\n\n  <script>\n    (function () {\n      const wrapper = document.querySelector('.selluxe_sales_point_kVd34U');\n      if (!wrapper) return;\n      if (wrapper.dataset.stockInit === 'true') return;\n      wrapper.dataset.stockInit = 'true';\n\n      const numberEl = wrapper.querySelector('.stock-number');\n      if (!numberEl) return;\n\n      let lastValue = null;\n      let rafId = null;\n\n      function getRandomStock() {\n        let next;\n        do {\n          next = Math.floor(Math.random() * 4) + 5; // 5 t/m 8\n        } while (next === lastValue);\n        lastValue = next;\n        return next;\n      }\n\n      function renderStock() {\n        const newValue = String(getRandomStock());\n        if (numberEl.textContent !== newValue) {\n          numberEl.textContent = newValue;\n        }\n      }\n\n      function scheduleRender() {\n        if (rafId) cancelAnimationFrame(rafId);\n        rafId = requestAnimationFrame(() => {\n          renderStock();\n        });\n      }\n\n      renderStock();\n\n      document.addEventListener('change', function (e) {\n        const target = e.target;\n        if (\n          target.matches('select[name=\"id\"]') ||\n          target.matches('input[name=\"id\"]') ||\n          target.matches('[name*=\"option\"]') ||\n          target.closest('.product-form__input') ||\n          target.closest('.variant-picker') ||\n          target.closest('variant-radios') ||\n          target.closest('variant-selects')\n        ) {\n          scheduleRender();\n        }\n      }, true);\n\n      document.addEventListener('click', function (e) {\n        const target = e.target;\n        if (\n          target.closest('.product-form__input label') ||\n          target.closest('.variant-picker label') ||\n          target.closest('.swatch') ||\n          target.closest('variant-radios label')\n        ) {\n          scheduleRender();\n        }\n      }, true);\n    })();\n  </script>\n</div>"
           }
         },
-        "a87f6976-fdca-403c-9377-eb85cc84bccd": {
-          "type": "variant_picker",
+        "separator_ALzLC8": {
+          "type": "separator",
+          "settings": {}
+        },
+        "custom_XFhatC": {
+          "type": "custom",
           "settings": {
-            "variant_labels": true,
-            "picker_type": "button",
-            "product_dynamic_variants_enable": true,
-            "color_swatches": true
+            "code": "<div class=\"cus-gua-div\">\n  <div class=\"gua-inner\">\n    <div class=\"gua-icon\">\n      <svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-truck\" viewBox=\"0 0 64 64\"><defs><style>.a{stroke-miterlimit:10}</style></defs><path class=\"a\" d=\"M16.5 43.22H6.88V16.5h33.14v26.72H23.94m21.48 0h-5.4V30.4h17.1v12.82h-4.23m4.23-12.82-6.41-8.56H40.02\"/><circle class=\"a\" cx=\"20.24\" cy=\"43.76\" r=\"3.74\"/><path class=\"a\" d=\"M45.42 43.23a3.82 3.82 0 1 1 0 .37v-.37\"/></svg>\n    </div>\n    <p class=\"cus-gua-p\">Free Shipping with UPS</p>\n  </div>\n\n  <div class=\"gua-inner\">\n    <div class=\"gua-icon\">\n      <svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-circle-checkmark\" viewBox=\"0 0 64 64\"><path d=\"M52.68 24.48A22 22 0 1 1 47 15.93\"/><path d=\"m21 32 8.5 8.5L57 13\"/></svg>\n    </div>\n    <p class=\"cus-gua-p\">30-Day Money-Back Guarantee</p>\n  </div>\n\n  <div class=\"gua-inner\">\n    <div class=\"gua-icon\">\n      <svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-lock\" viewBox=\"0 0 64 64\"><path d=\"M19.45 23.6v-3.2c0-7 5.89-11.75 12.55-11.75 7.21 0 12.55 5.49 12.55 11.75v3.2M10 23.6h44v31.75H10zm22 13.87v7.47\"/><circle cx=\"32\" cy=\"35.87\" r=\"1.6\"/></svg>\n    </div>\n    <p class=\"cus-gua-p\">Pay securely with Credit Card</p>\n  </div>\n</div>\n\n<style>\n  .cus-gua-div {\n    margin: 20px 0;\n    display: flex;\n    flex-direction: column;\n    gap: 10px;\n  }\n\n  .gua-inner {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n  }\n\n  .gua-icon {\n    width: 21px;\n    height: 21px;\n    flex: 0 0 21px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  .gua-icon svg,\n  .gua-icon img {\n    width: 21px;\n    height: 21px;\n    display: block;\n  }\n\n  .cus-gua-p {\n    margin: 0;\n    line-height: 21px;\n    color: #000000;\n    font-size:16px;\n  }\n</style>"
           }
         },
         "buy_buttons": {
@@ -140,9 +144,10 @@
         "selluxe_tp_stars_PKy6qi",
         "price",
         "separator",
-        "custom_XFhatC",
-        "custom_C8JCa3",
         "a87f6976-fdca-403c-9377-eb85cc84bccd",
+        "custom_C8JCa3",
+        "separator_ALzLC8",
+        "custom_XFhatC",
         "buy_buttons",
         "custom_GLi9Ha",
         "ea05bd8c-ce3b-4efc-9331-8543471e68d9",
