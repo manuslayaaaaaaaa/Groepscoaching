@@ -182,47 +182,47 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>“The order arrived beautifully packaged and in perfect condition. You can really feel the quality of the fabric.”</p>",
+            "testimonial": "<p>“My new favorite boutique. Everything feels thoughtfully made and incredibly flattering.”</p>",
             "image": "shopify://shop_images/2.png",
-            "author": "Emma J.",
-            "author_info": "London – 12 hours ago"
+            "author": "Hannah L.",
+            "author_info": "Philadelphia"
           }
         },
         "testimonial_LnmetD": {
           "type": "testimonial",
           "settings": {
             "icon": "4-stars",
-            "testimonial": "<p>“Great service from Lisa & Peter London. The clothes fit perfectly and the personal touch really makes a difference.”</p>",
+            "testimonial": "<p>“Fantastic experience with Grace & Parker. The order arrived quickly and safely, and the quality of the products is top notch. It was a little exciting to order online for the first time, but everything went exactly as expected. I will definitely order again!”</p>",
             "image": "shopify://shop_images/1.png",
-            "author": "Claire W.",
-            "author_info": "Manchester – 1 day ago"
+            "author": "Evelyn L.",
+            "author_info": "New York"
           }
         },
         "testimonial_nNPWGR": {
           "type": "testimonial",
           "settings": {
             "icon": "4-stars",
-            "testimonial": "<p>“I’m very impressed with the attention to detail. Everything came neatly wrapped, smelling fresh and ready to wear.”</p>",
-            "author": "Sarah M.",
-            "author_info": "Birmingham – 2 days ago"
+            "testimonial": "<p>“I like my clothes to be comfortable. I ordered 3 jumpers and they fit perfectly!”</p>",
+            "author": "Judith C.",
+            "author_info": "Phoenix"
           }
         },
         "testimonial_CKjU44": {
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>“Fantastic experience! The items are high quality and you can tell the store genuinely cares about its customers.”</p>",
-            "author": "Olivia R.",
-            "author_info": "Leeds – 3 days ago"
+            "testimonial": "<p>“Have ordered here several times now and each time has been an excellent experience. Products and service are from high quality. Truly a store you can trust!”</p>",
+            "author": "Elizabeth S.",
+            "author_info": "Los Angeles"
           }
         },
         "testimonial_VTwX68": {
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>“My package arrived safely and beautifully presented. Lisa & Peter London make online shopping feel truly personal.”</p>",
-            "author": "Helen P.",
-            "author_info": "Liverpool – 5 days ago"
+            "testimonial": "<p>“I was hesitant to spend $150 on a jacket from a website I didn’t know, but I’m so glad I did! The quality is amazing and the fit is perfect. Thanks Grace & Parker!!”</p>",
+            "author": "Michelle C.",
+            "author_info": "Chicago"
           }
         }
       },
@@ -234,7 +234,7 @@
         "testimonial_VTwX68"
       ],
       "settings": {
-        "title": "What customers have to say about Lisa & Peter London",
+        "title": "Here's what our customers say",
         "align_text": "center",
         "round_images": true,
         "color_background": "#ffffff",
