@@ -126,9 +126,10 @@
         "selluxe_followers_T9XW6r": {
           "type": "selluxe_followers",
           "settings": {
-            "reviewers": "<strong>Rachel K.</strong>",
+            "profile_picture_1": "shopify://shop_images/jenifer_aniston.webp",
+            "reviewers": "<strong>Jennifer Aniston</strong>",
             "show_verified": true,
-            "add_text": "and <strong>3.1k+</strong> other women love <strong>Lisa & Peter London!</strong>",
+            "add_text": "and <strong>115+</strong> other women love <strong>Grace and Parker.</strong>",
             "font_size": 14,
             "image_size": 40,
             "horizontal_alignment": "flex-start"
