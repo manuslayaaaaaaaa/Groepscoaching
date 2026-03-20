@@ -98,7 +98,7 @@
         "ea05bd8c-ce3b-4efc-9331-8543471e68d9": {
           "type": "custom",
           "settings": {
-            "code": "<div class=\"product-block\">\n  <div class=\"stock-update\">\n    <p style=\"background-color: #f9ece9; padding: 15px; border-radius: 5px; color: #b04135; font-size: 13px;\">\n      <strong>SALE UPDATE:</strong> Due to high demand during our anniversary sale, only a limited number of items are left!\n    </p>\n  </div>\n</div>"
+            "code": "<div class=\"sale-box-lp\">\n  <h2>ANNIVERSARY SALE ENDS TODAY</h2>\n  <h3>UP TO 70% OFF</h3>\n  <p>\n    Now is the time to shop your favourite items at irresistible prices.\n    As long as stocks last!\n  </p>\n</div>\n\n<style>\n  .sale-box-lp {\n    background: #f4f4f4;\n    border: 2px solid #000000;\n    border-radius: 2px;\n    padding: 28px 18px;\n    margin: 25px 0;\n    text-align: center;\n    box-sizing: border-box;\n    width: 100%;\n    font-family: 'Outfit', sans-serif;\n  }\n\n  .sale-box-lp h2 {\n    margin: 0 0 6px;\n    color: #c03a2b;\n    font-family: 'Outfit', sans-serif;\n    font-size: 14px;\n    font-weight: 700;\n    line-height: 1.3;\n    text-transform: uppercase;\n    letter-spacing: 0;\n  }\n\n  .sale-box-lp h3 {\n    margin: 0 0 14px;\n    color: #000000;\n    font-family: 'Outfit', sans-serif;\n    font-size: 14px;\n    font-weight: 600;\n    line-height: 1.3;\n    text-transform: uppercase;\n    letter-spacing: 0;\n  }\n\n  .sale-box-lp p {\n    margin: 0 auto;\n    max-width: 285px;\n    color: #545454;\n    font-family: 'Outfit', sans-serif;\n    font-size: 15px;\n    font-weight: 400;\n    line-height: 1.55;\n  }\n</style>\n  </div>\n</div>"
           }
         },
         "description": {
