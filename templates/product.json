@@ -110,24 +110,16 @@
         "tab": {
           "type": "tab",
           "settings": {
-            "title": "Free SHIPPING",
-            "content": "<p>We are offering free shipping within the United States <strong>for all orders.</strong></p><p><strong>We ship our packages with a Track & Trace code</strong> so you can always monitor your order.</p><p>You will receive the Track & Trace code via email within 24-72 hours after placing your order.</p>",
+            "title": "SHIPPING AND RETURNS",
+            "content": "<p><strong>SHIPPING</strong></p><p>At Evelyn & Parker, we offer fast free shipping with UPS.</p><p>You will also receive a Track & Trace code after we processed your order so that you can track your order with peace of mind.</p><p><strong>RETURNS</strong></p><p>We stand behind the quality and excellence of our products, and to demonstrate our confidence, we provide a 30-day money-back guarantee on every purchase.</p><p>If you're not completely satisfied, simply return your item within 30 days of receipt for a full refund.</p>",
             "page": ""
           }
         },
         "6fbafccd-e300-4684-a364-9c3fb056e3f9": {
           "type": "tab",
           "settings": {
-            "title": "30-day return guarantee",
-            "content": "<p>If our product does not meet your expectations, you can return it within <strong>30 days upon receipt</strong>.</p><p>Before returning the goods, please contact our customer service at info@graceandparker.com and let us know the reason for the return so we can process your request correctly.</p><p>Please review our return policy for more information!</p>",
-            "page": ""
-          }
-        },
-        "f9420f3c-75d6-4aa6-96b3-4ed76131dc4e": {
-          "type": "tab",
-          "settings": {
-            "title": "3.172+ SATISFIED CUSTOMERS",
-            "content": "<p><strong>Lisa & Peter London</strong> has over 3.172+ satisfied customers and our customers give us a rating of 4.7/5.0.</p>",
+            "title": "SECURE PAYMENTS",
+            "content": "<p>Protection of your data is very important to us. We keep it confidential, never share it with others, and only use it for specific tasks before removing it. Our website uses<strong>SSL encryption</strong>to protect your data.</p>",
             "page": ""
           }
         },
@@ -156,7 +148,6 @@
         "description",
         "tab",
         "6fbafccd-e300-4684-a364-9c3fb056e3f9",
-        "f9420f3c-75d6-4aa6-96b3-4ed76131dc4e",
         "selluxe_followers_T9XW6r"
       ],
       "custom_css": [
