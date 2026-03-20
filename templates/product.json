@@ -107,19 +107,19 @@
             "is_tab": false
           }
         },
-        "6fbafccd-e300-4684-a364-9c3fb056e3f9": {
-          "type": "tab",
-          "settings": {
-            "title": "30-day return guarantee",
-            "content": "<p>If our product does not meet your expectations, you can return it within <strong>30 days upon receipt</strong>.</p><p>Before returning the goods, please contact our customer service at <strong>info@lisapeterlondon.com</strong> and let us know the reason for the return so we can process your request correctly.</p>",
-            "page": ""
-          }
-        },
         "tab": {
           "type": "tab",
           "settings": {
             "title": "Free SHIPPING",
-            "content": "<p>We are offering free shipping within the United Kingdom <strong>for all orders</strong>.</p><p><strong>We ship our packages with a Track & Trace code</strong> so you can always monitor your order.</p><p>You will receive the Track & Trace code via email within 1-24 hours after placing your order.</p>",
+            "content": "<p>We are offering free shipping within the United States <strong>for all orders.</strong></p><p><strong>We ship our packages with a Track & Trace code</strong> so you can always monitor your order.</p><p>You will receive the Track & Trace code via email within 24-72 hours after placing your order.</p>",
+            "page": ""
+          }
+        },
+        "6fbafccd-e300-4684-a364-9c3fb056e3f9": {
+          "type": "tab",
+          "settings": {
+            "title": "30-day return guarantee",
+            "content": "<p>If our product does not meet your expectations, you can return it within <strong>30 days upon receipt</strong>.</p><p>Before returning the goods, please contact our customer service at info@graceandparker.com and let us know the reason for the return so we can process your request correctly.</p><p>Please review our return policy for more information!</p>",
             "page": ""
           }
         },
@@ -154,8 +154,8 @@
         "custom_GLi9Ha",
         "ea05bd8c-ce3b-4efc-9331-8543471e68d9",
         "description",
-        "6fbafccd-e300-4684-a364-9c3fb056e3f9",
         "tab",
+        "6fbafccd-e300-4684-a364-9c3fb056e3f9",
         "f9420f3c-75d6-4aa6-96b3-4ed76131dc4e",
         "selluxe_followers_T9XW6r"
       ],
