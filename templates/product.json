@@ -439,29 +439,45 @@
         "question_gXfXEb": {
           "type": "question",
           "settings": {
-            "title": "How Can I Track My Order?",
-            "text": "<p>Once your order is confirmed, you will receive an email with your order number. To <strong>track your order!</strong></p>"
+            "title": "Is your clothing made with sustainability in mind?",
+            "text": "<p>We are committed to responsible fashion. Our products are crafted with high-quality materials, and we continuously explore <strong>eco-friendly</strong> practices to reduce our environmental impact.</p>"
           }
         },
         "question_t4YRrf": {
           "type": "question",
           "settings": {
-            "title": "What is the Return Policy?",
-            "text": "<p>You can return items within <strong>30 calendar days</strong> of receiving them.</p><ul><li>Return shipping costs are the buyer’s responsibility.</li><li>Approved refunds will be issued to your original payment method.</li></ul>"
+            "title": "What if i'm unsure about sizing?",
+            "text": "<p>If you're unsure about the fit, <strong>we recommend choosing a size up.</strong> This will give you a more comfortable fit, and you can always return the item if needed. For questions, you can also always reach our customer service team.</p>"
           }
         },
         "question_fTgniy": {
           "type": "question",
           "settings": {
-            "title": "I Have an Issue With My Order. How Can I Contact You?",
-            "text": "<p>If you experience any issues or have questions, visit our <strong>Contact Page </strong>to connect with our support team. We’re here to assist you promptly!</p>"
+            "title": "How can I return my order?",
+            "text": "<p>Simply contact our customer service via our <strong>contact page</strong>. You will receive a reply with the return details within 24 hours.</p>"
+          }
+        },
+        "question_L8d3xP": {
+          "type": "question",
+          "settings": {
+            "title": "How can i track my order?",
+            "text": "<p>Once your order has been processed, you will immediately receive a confirmation e-mail with your personal tracking details, which you can enter on our <strong>tracking page</strong>. This way you can always easily track your order.</p>"
+          }
+        },
+        "question_TcLWwA": {
+          "type": "question",
+          "settings": {
+            "title": "Is my payment secure?",
+            "text": "<p><strong>Yes, your payment is 100% secure.</strong> We use industry-standard SSL encryption to protect your information, ensuring a safe and reliable checkout process.</p>"
           }
         }
       },
       "block_order": [
         "question_gXfXEb",
         "question_t4YRrf",
-        "question_fTgniy"
+        "question_fTgniy",
+        "question_L8d3xP",
+        "question_TcLWwA"
       ],
       "name": "t:sections.faq.presets.faq.name",
       "settings": {
