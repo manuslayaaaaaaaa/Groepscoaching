@@ -208,12 +208,12 @@
         "button_link": "",
         "button_style": "primary",
         "align_text": "center",
-        "image_width": "50",
+        "image_width": "66",
         "layout": "right",
         "divider": false,
-        "top_padding": true,
+        "top_padding": false,
         "bottom_padding": true,
-        "lazyload_images": true
+        "lazyload_images": false
       }
     },
     "featured_collection_zRnJ6y": {
@@ -297,310 +297,8 @@
         "color_text": "#1c1d1d"
       }
     },
-    "videosglider_UKWUBw": {
-      "type": "videosglider",
-      "blocks": {
-        "review_kmKWaz": {
-          "type": "review",
-          "settings": {
-            "image_size": 38,
-            "image_size_mobile": 38,
-            "image_radius": 100,
-            "image_border_thickness": 2,
-            "stars_count": 4.5,
-            "stars_size": 18,
-            "stars_size_mobile": 16,
-            "review": "",
-            "stars_text": "",
-            "review_custom": false,
-            "review_font": "josefin_sans_n4",
-            "review_size": 16,
-            "review_size_mobile": 13,
-            "review_height": 130,
-            "review_mt": 16,
-            "review_mt_mobile": 10,
-            "review_color": "#121212",
-            "count_color": "#121212",
-            "stars_color": "#000000",
-            "stars_bg_color": "#ffffff",
-            "stars_bg_half_color": "#dddddd",
-            "image_border_color": "#ffffff"
-          }
-        },
-        "heading_GrMkNK": {
-          "type": "heading",
-          "settings": {
-            "heading": "<h2>Customers love Ella & Rose</h2>",
-            "heading_custom": false,
-            "heading_font": "josefin_sans_n4",
-            "heading_size": 48,
-            "heading_size_mobile": 32,
-            "heading_height": 130,
-            "heading_mt": 12,
-            "heading_mt_mobile": 16,
-            "heading_max_width": 80,
-            "heading_color": "#121212",
-            "heading_border_color": "#00b67d"
-          }
-        },
-        "slide_3mqddH": {
-          "type": "slide",
-          "settings": {
-            "media_type": "image",
-            "video_url": "",
-            "text": "<p>Elegant, comfortable, and surprisingly high quality. The cut is super flattering. Love it more than expected.</p>",
-            "stars_count": 4,
-            "badge": "Verified",
-            "author": "Olivia M."
-          }
-        },
-        "slide_P8yHyx": {
-          "type": "slide",
-          "settings": {
-            "media_type": "image",
-            "video_url": "",
-            "text": "<p>The fabric feels incredibly soft and luxurious. Fits beautifully and looks exactly like the photos. I’d absolutely buy again.</p>",
-            "stars_count": 5,
-            "badge": "Verified",
-            "author": "Jasmine L."
-          }
-        },
-        "slide_8xHMP8": {
-          "type": "slide",
-          "settings": {
-            "media_type": "image",
-            "video_url": "",
-            "text": "<p>This piece exceeded my expectations. Great fit, lovely material, and fast delivery. I’ve already worn it twice.</p>",
-            "stars_count": 5,
-            "badge": "Verified",
-            "author": "Emily R."
-          }
-        },
-        "slide_CK3zni": {
-          "type": "slide",
-          "settings": {
-            "media_type": "image",
-            "video_url": "",
-            "text": "<p>Perfect for both casual and dressed-up looks. It hugs the body just right. Definitely a wardrobe favorite.</p>",
-            "stars_count": 4.5,
-            "badge": "Verified",
-            "author": "Natalie B."
-          }
-        },
-        "slide_DFJYb3": {
-          "type": "slide",
-          "settings": {
-            "media_type": "image",
-            "video_url": "",
-            "text": "<p>Beautifully made and feels premium. The color is even better in person. Very happy with my order.</p>",
-            "stars_count": 5,
-            "badge": "Verified",
-            "author": "Sarah T."
-          }
-        },
-        "slide_KycPYx": {
-          "type": "slide",
-          "settings": {
-            "media_type": "image",
-            "video_url": "",
-            "text": "<p>I’m impressed with the quality and design. It feels high-end but still affordable. Highly recommend it.</p>",
-            "stars_count": 5,
-            "badge": "Verified",
-            "author": "Lauren G."
-          }
-        },
-        "slide_X6XKVH": {
-          "type": "slide",
-          "settings": {
-            "media_type": "image",
-            "video_url": "",
-            "text": "<p>This is my new go-to piece. Soft, stylish, and super versatile. I’ll be keeping an eye on new releases.</p>",
-            "stars_count": 5,
-            "badge": "Verified",
-            "author": "Cloe D."
-          }
-        },
-        "button_wKdVf6": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button": "SHOP NOW",
-            "url": "",
-            "button_custom": false,
-            "button_font": "josefin_sans_n4",
-            "button_size": 16,
-            "button_size_mobile": 16,
-            "button_height": 100,
-            "button_padding_horizontal": 100,
-            "button_padding_horizontal_mobile": 100,
-            "button_padding_vertical": 20,
-            "button_padding_vertical_mobile": 18,
-            "button_radius": 8,
-            "button_border_thickness": 1,
-            "button_mt": 32,
-            "button_mt_mobile": 24,
-            "button_style": "non_outline",
-            "button_color": "#ffffff",
-            "button_hover_color": "#ffffff",
-            "button_bg_color": "#00b67d",
-            "button_bg_hover_color": "#17c28d",
-            "button_border_color": "#121212",
-            "button_border_hover_color": "#121212"
-          }
-        }
-      },
-      "block_order": [
-        "review_kmKWaz",
-        "heading_GrMkNK",
-        "slide_3mqddH",
-        "slide_P8yHyx",
-        "slide_8xHMP8",
-        "slide_CK3zni",
-        "slide_DFJYb3",
-        "slide_KycPYx",
-        "slide_X6XKVH",
-        "button_wKdVf6"
-      ],
-      "disabled": true,
-      "name": "SS - Testimonials #28",
-      "settings": {
-        "content_align": "center",
-        "content_align_mobile": "center",
-        "slider_view": 4,
-        "slider_view_mobile": 1.3,
-        "slider_gap": 20,
-        "slider_gap_mobile": 16,
-        "slider_mt": 40,
-        "slider_mt_mobile": 28,
-        "slide_radius": 16,
-        "slide_border_thickness": 0,
-        "media_ratio": "square",
-        "media_ratio_mobile": "square",
-        "play_size": 20,
-        "play_size_mobile": 24,
-        "play_radius": 100,
-        "slide_content_padding_horizontal": 20,
-        "slide_content_padding_horizontal_mobile": 20,
-        "slide_content_padding_vertical": 20,
-        "slide_content_padding_vertical_mobile": 20,
-        "slide_content_align": "left",
-        "slide_content_align_mobile": "left",
-        "text_custom": false,
-        "text_font": "josefin_sans_n4",
-        "text_size": 15,
-        "text_size_mobile": 14,
-        "text_height": 150,
-        "stars_size": 18,
-        "stars_size_mobile": 16,
-        "stars_wrapper_mt": 20,
-        "stars_wrapper_mt_mobile": 20,
-        "badge_padding_horizontal": 6,
-        "badge_padding_horizontal_mobile": 6,
-        "badge_padding_vertical": 4,
-        "badge_padding_vertical_mobile": 4,
-        "badge_radius": 2,
-        "badge_custom": false,
-        "badge_font": "josefin_sans_n4",
-        "badge_size": 12,
-        "badge_size_mobile": 11,
-        "badge_height": 100,
-        "author_custom": false,
-        "author_font": "josefin_sans_n4",
-        "author_size": 14,
-        "author_size_mobile": 13,
-        "author_height": 130,
-        "author_mt": 16,
-        "author_mt_mobile": 12,
-        "arrows_gap": 20,
-        "arrows_gap_mobile": 16,
-        "arrows_mt": 32,
-        "arrows_mt_mobile": 24,
-        "arrow_size": 40,
-        "arrow_size_mobile": 40,
-        "arrow_icon_size": 10,
-        "arrow_icon_size_mobile": 10,
-        "arrow_border_thickness": 0,
-        "arrow_radius": 100,
-        "arrow_hover_effect": "color",
-        "arrow_show_desktop": true,
-        "arrow_show_mobile": false,
-        "text_color": "#121212",
-        "author_color": "#121212",
-        "stars_color": "#000000",
-        "stars_bg_color": "#ffffff",
-        "stars_bg_half_color": "#dddddd",
-        "slide_bg_color": "#ffffff",
-        "slide_border_color": "#121212",
-        "badge_color": "#121212",
-        "badge_bg_color": "#f3f3f3",
-        "play_color": "#ffffff",
-        "play_hover_color": "#121212",
-        "play_bg_color": "#121212",
-        "play_bg_hover_color": "#ffffff",
-        "arrow_color": "#ffffff",
-        "arrow_hover_color": "#121212",
-        "arrow_bg_color": "#121212",
-        "arrow_bg_hover_color": "#ffffff",
-        "arrow_border_color": "#121212",
-        "arrow_border_hover_color": "#121212",
-        "background_color": "#ffffff",
-        "background_gradient": "",
-        "border_color": "#121212",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "margin_horizontal": 0,
-        "margin_horizontal_mobile": 0,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 1.5,
-        "full_width": false,
-        "content_width": 1200,
-        "border_thickness": 0,
-        "section_radius": 0,
-        "lazy": true
-      }
-    },
-    "testimonials_slider_dKBxHe": {
-      "type": "testimonials-slider",
-      "disabled": true,
-      "name": "Testimonial Grid",
-      "settings": {}
-    },
-    "advanced_content_rQtHGM": {
-      "type": "advanced-content",
-      "blocks": {
-        "image_raTfgL": {
-          "type": "image",
-          "settings": {
-            "link": "",
-            "width": "50%",
-            "alignment": "center"
-          }
-        },
-        "liquid_yeGTF4": {
-          "type": "liquid",
-          "settings": {
-            "code": "<h2>Money-Back Guarantee</h2>\n<p>\n  I truly believe in the quality of our clothing – and I’m confident you’ll love it too. \n  That’s why we offer a hassle-free 30-day money-back guarantee.\n</p>\n<p>\n  If you’re not completely satisfied with your purchase, simply return it within 30 days \n  and receive a full refund – no questions asked.\n</p>",
-            "width": "50%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "image_raTfgL",
-        "liquid_yeGTF4"
-      ],
-      "name": "t:sections.advanced-content.presets.custom_content.name",
-      "settings": {
-        "full_width": false,
-        "space_around": true,
-        "lazyload_images": true
-      }
-    },
     "sub": {
       "type": "product-full-width",
-      "disabled": true,
       "settings": {
         "max_width": true
       }
@@ -731,6 +429,7 @@
       "blocks": {
         "text_block_PXYphH": {
           "type": "text_block",
+          "disabled": true,
           "settings": {
             "icon": "calendar",
             "title": "30-DAY MONEY-BACK GUARANTEE",
@@ -759,6 +458,7 @@
         "text_block_f3GT7y",
         "text_block_pgeXmX"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "align_text": "center",
@@ -820,9 +520,6 @@
     "text_and_image_yNYQNN",
     "featured_collection_zRnJ6y",
     "testimonials_EpAxJf",
-    "videosglider_UKWUBw",
-    "testimonials_slider_dKBxHe",
-    "advanced_content_rQtHGM",
     "sub",
     "product-recommendations",
     "recently-viewed",
