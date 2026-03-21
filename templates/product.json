@@ -430,7 +430,7 @@
         "text_block_PXYphH": {
           "type": "text_block",
           "settings": {
-            "icon": "wallet",
+            "icon": "trophy",
             "title": "100% Secure Payment",
             "text": "<p>We offer you a variety of secure payment options. Pay easily and enjoy a safe shopping experience.</p>"
           }
@@ -448,7 +448,7 @@
           "settings": {
             "icon": "shield",
             "title": "30 Day Money Back Guarantee",
-            "text": "<p>At <strong>Lisa & Peter London</strong>, you can securely and conveniently pay for your order using credit card.</p>"
+            "text": "<p>Your satisfaction is our focus. Our 30-day return policy guarantees you maximum flexibility and the best shopping experience.</p>"
           }
         }
       },
