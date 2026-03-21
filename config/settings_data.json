@@ -572,7 +572,10 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".product-single__title {font-size: 24px !important; line-height: 1.05 !important; letter-spacing: 0 !important; margin-bottom: 10px !important;}"
+      ".product-single__title{font:400 23px/1.05 \"Tenor Sans\"!important;letter-spacing:.12em!important;text-transform:uppercase!important;margin:0 0 8px!important}",
+      ".product__price,.sale-price{color:#06b67a!important}",
+      ".product__price--compare,s,.was-price{color:#000!important}",
+      ".sale-label,.price__badge-sale,.product__sale-text{color:#d92121!important}"
     ]
   }
 }
