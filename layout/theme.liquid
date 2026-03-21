@@ -99,61 +99,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Tenor+Sans&display=swap" rel="stylesheet">
 
-  <style>
-    /* Doorgestreepte prijs */
-    .product__price--compare,
-    .product-single__price--compare-at,
-    .product-price__compare,
-    .product-block--price s,
-    .product-block--price .was-price,
-    .product-block--price .product__price--strike,
-    .product-block--price [data-compare-price] {
-      color: #000000 !important;
-      font-family: "Montserrat", sans-serif !important;
-      font-size: 18px !important;
-      font-weight: 400 !important;
-      line-height: 1 !important;
-      margin: 0 !important;
-      opacity: 1 !important;
-    }
-    /* Verkoopprijs groen */
-    .product__price,
-    .product-single__price,
-    .product__price.on-sale,
-    .product-single__meta .product__price.on-sale,
-    .product-block--price .product__price,
-    .product-block--price .sale-price,
-    .product-block--price [data-product-price],
-    .product-block--price .product-price {
-      color: #06b67a !important;
-      font-family: "Montserrat", sans-serif !important;
-      font-size: 18px !important;
-      font-weight: 400 !important;
-      line-height: 1 !important;
-      margin: 0 !important;
-    }
-    /* Anniversary Sale tekst */
-    .product-anniversary-sale,
-    .product-block--price .sale-label,
-    .product-block--price .product__sale-text,
-    .product-block--price .price__badge-sale,
-    .product-block--price .product__price-savings,
-    .product-block--price .price__label-sale {
-      color: #d92121 !important;
-      font-family: "Montserrat", sans-serif !important;
-      font-size: 18px !important;
-      font-weight: 400 !important;
-      line-height: 1 !important;
-      text-transform: uppercase !important;
-      letter-spacing: 0 !important;
-      margin: 0 !important;
-    }
-    /* Minder whitespace tussen titel en prijs */
-    .product-block--price {
-      margin-top: -12px !important;
-    }
-  </style>
-
   <script src="{{ 'vendor-scripts-v11.js' | asset_url | split: '?' | first }}" defer="defer"></script>
 
   {%- if shop.enabled_currencies.size > 1 -%}
