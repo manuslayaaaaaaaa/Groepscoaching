@@ -13402,7 +13402,7 @@ html[dir=rtl] .product-single__meta .rte{
   .product-block--header .spr-badge,
   .product-block--header .jdgm-widget,
   .product-block--header .shopify-product-reviews-badge {
-    margin-bottom: 4px !important;
+    margin-bottom: 6px !important;
     font-family: "Montserrat", sans-serif !important;
     font-size: 14px !important;
     line-height: 1.2 !important;
@@ -13421,106 +13421,106 @@ html[dir=rtl] .product-single__meta .rte{
     font-size: 23px !important;
     color: #000000 !important;
     margin-top: 0 !important;
-    margin-bottom: 8px !important;
+    margin-bottom: 6px !important;
   }
 
   /* Minder witruimte tussen reviews en titel */
   .product-block--header {
-    margin-bottom: 4px !important;
+    margin-bottom: 0 !important;
     padding-bottom: 0 !important;
   }
 
   /* Prijsblok compacter en dichter op titel */
-.product-block--price {
-  margin-top: 4px !important;
-  margin-bottom: 14px !important;
-  padding-top: 0 !important;
-  display: flex !important;
-  align-items: baseline !important;
-  flex-wrap: wrap !important;
-  column-gap: 10px !important;
-  row-gap: 2px !important;
-}
+  .product-block--price {
+    margin-top: 0 !important;
+    margin-bottom: 14px !important;
+    padding-top: 0 !important;
+    display: flex !important;
+    align-items: baseline !important;
+    flex-wrap: nowrap !important;
+    column-gap: 10px !important;
+    row-gap: 0 !important;
+  }
 
-/* Oude / doorgestreepte prijs */
-.product__price--compare,
-.product-single__price--compare-at,
-.product-price__compare,
-.product-block--price s,
-.product-block--price .was-price,
-.product-block--price .product__price--strike,
-.product-block--price [data-compare-price] {
-  color: #000000 !important;
-  font-family: "Montserrat", sans-serif !important;
-  font-size: 16px !important;
-  font-weight: 500 !important;
-  line-height: 1 !important;
-  text-decoration-thickness: 2px !important;
-  opacity: 1 !important;
-  margin: 0 !important;
-  display: inline-block !important;
-  vertical-align: baseline !important;
-}
+  /* Oude / doorgestreepte prijs */
+  .product__price--compare,
+  .product-single__price--compare-at,
+  .product-price__compare,
+  .product-block--price s,
+  .product-block--price .was-price,
+  .product-block--price .product__price--strike,
+  .product-block--price [data-compare-price] {
+    color: #000000 !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    text-decoration-thickness: 2px !important;
+    opacity: 1 !important;
+    margin: 0 !important;
+    display: inline-block !important;
+    vertical-align: baseline !important;
+  }
 
-/* Huidige prijs */
-.product__price,
-.product-single__price,
-.product-block--price .sale-price,
-.product-block--price [data-product-price],
-.product-block--price .product-price {
-  color: #06b67a !important;
-  font-family: "Montserrat", sans-serif !important;
-  font-size: 16px !important;
-  font-weight: 500 !important;
-  line-height: 1 !important;
-  margin: 0 !important;
-  display: inline-block !important;
-  vertical-align: baseline !important;
-}
+  /* Huidige prijs */
+  .product__price,
+  .product-single__price,
+  .product-block--price .sale-price,
+  .product-block--price [data-product-price],
+  .product-block--price .product-price {
+    color: #06b67a !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    margin: 0 !important;
+    display: inline-block !important;
+    vertical-align: baseline !important;
+  }
 
-/* Sale tekst */
-.product-anniversary-sale,
-.product-block--price .sale-label,
-.product-block--price .product__sale-text,
-.product-block--price .price__badge-sale,
-.product-block--price .product__price-savings,
-.product-block--price .price__label-sale {
-  color: #d92121 !important;
-  font-family: "Montserrat", sans-serif !important;
-  font-size: 16px !important;
-  font-weight: 500 !important;
-  line-height: 1 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0 !important;
-  margin: 0 !important;
-  display: inline-block !important;
-  vertical-align: baseline !important;
-}
+  /* Sale tekst */
+  .product-anniversary-sale,
+  .product-block--price .sale-label,
+  .product-block--price .product__sale-text,
+  .product-block--price .price__badge-sale,
+  .product-block--price .product__price-savings,
+  .product-block--price .price__label-sale {
+    color: #d92121 !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0 !important;
+    margin: 0 !important;
+    display: inline-block !important;
+    vertical-align: baseline !important;
+  }
 
-/* Zorg dat prijsregels netjes naast elkaar lopen */
-.product-block--price .product__price-wrap,
-.product-block--price .price-wrapper,
-.product-block--price .product-price-wrap,
-.product-block--price [data-product-price-wrap] {
-  display: flex !important;
-  align-items: baseline !important;
-  flex-wrap: nowrap !important;
-  column-gap: 10px !important;
-  row-gap: 0 !important;
-  width: auto !important;
-}
+  /* Zorg dat prijsregels netjes naast elkaar lopen */
+  .product-block--price .product__price-wrap,
+  .product-block--price .price-wrapper,
+  .product-block--price .product-price-wrap,
+  .product-block--price [data-product-price-wrap] {
+    display: flex !important;
+    align-items: baseline !important;
+    flex-wrap: nowrap !important;
+    column-gap: 10px !important;
+    row-gap: 0 !important;
+    width: auto !important;
+  }
 
-/* Overbodige witruimte onder image/title-meta iets kleiner */
-.product-single__meta > *:last-child {
-  margin-bottom: 0 !important;
-}
+  /* Overbodige witruimte onder image/title-meta iets kleiner */
+  .product-single__meta > *:last-child {
+    margin-bottom: 0 !important;
+  }
 
-/* Variant blokken iets strakker zodat geheel meer competitor voelt */
-.variant-wrapper,
-.variant-input-wrap,
-.product-form__item {
-  margin-bottom: 14px !important;
-}
+  /* Variant blokken iets strakker zodat geheel meer competitor voelt */
+  .variant-wrapper,
+  .variant-input-wrap,
+  .product-form__item {
+    margin-bottom: 14px !important;
+  }
 }
 
 /* Desktop ook iets netter maken */
@@ -13540,16 +13540,16 @@ html[dir=rtl] .product-single__meta .rte{
     letter-spacing: 0.11em !important;
     line-height: 1.06 !important;
     color: #000000 !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 6px !important;
   }
 
   .product-block--price {
-    margin-top: 8px !important;
+    margin-top: 0 !important;
     display: flex !important;
     align-items: baseline !important;
-    flex-wrap: wrap !important;
+    flex-wrap: nowrap !important;
     column-gap: 10px !important;
-    row-gap: 2px !important;
+    row-gap: 0 !important;
   }
 
   .product__price,
