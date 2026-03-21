@@ -194,6 +194,27 @@
         "product_video_style": "muted"
       }
     },
+    "text_and_image_yNYQNN": {
+      "type": "text-and-image",
+      "name": "t:sections.text-and-image.presets.image_with_text.name",
+      "settings": {
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Meet Pieter & Lisa",
+        "text": "<p>At <strong>Lisa & Peter London</strong>, everything starts with <strong>passion for fashion</strong>. From a young age, Pieter and Lisa shared a lifelong love for style and creativity. Both studied <strong>Fashion Design and Business</strong> before building their careers in the industry. After working for different companies, they came together as a couple and decided to create something of their own.</p><p>Now, more than <strong>10 years later</strong>, they run their store with countless happy clients and inspiring projects. Their mission has always been clear: to stay ahead of <strong>new trends</strong>, deliver <strong>high-quality pieces</strong>, and offer a truly <strong>personal approach</strong>. For Pieter and Lisa, it’s about more than fashion — it’s about making every customer feel seen, valued, and stylish in their own unique way.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
     "testimonials_EpAxJf": {
       "type": "testimonials",
       "blocks": {
@@ -273,29 +294,6 @@
         "mobile_scrollable": true,
         "view_all": false,
         "divider": false
-      }
-    },
-    "advanced_content_WwcBt8": {
-      "type": "advanced-content",
-      "blocks": {
-        "liquid_M6UC4L": {
-          "type": "liquid",
-          "settings": {
-            "code": "<style>\n.divorce-banner {\n  background: linear-gradient(135deg, #ffeaea, #fff8f8);\n  border: 1px solid #ffb3b3;\n  padding: 24px;\n  border-radius: 12px;\n  margin: 50px 0;\n  font-family: 'Arial', sans-serif;\n  box-shadow: 0 4px 15px rgba(0,0,0,0.05);\n  text-align: center;\n  max-width: 700px;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.divorce-banner h3 {\n  font-size: 22px;\n  color: #b30000;\n  margin-bottom: 12px;\n  font-family: 'Georgia', serif;\n}\n\n.divorce-banner p {\n  font-size: 15px;\n  color: #333;\n  margin: 8px 0;\n  line-height: 1.6;\n}\n\n.divorce-banner .icon {\n  font-size: 36px;\n  margin-bottom: 12px;\n}\n</style>\n\n<div class=\"divorce-banner\">\n  <div class=\"icon\">💔</div>\n  <h3>Official Business Liquidation Notice</h3>\n  <p>Due to a divorce settlement, this store is being permanently closed.</p>\n  <p>All remaining inventory is part of a court-enforced asset liquidation.</p>\n  <p><strong>Store closure scheduled for <span id=\"closure-date\"></span>.</strong></p>\n  <p>Once sold out, these pieces will never return.</p>\n</div>\n\n<script>\n  const closureDate = new Date();\n  closureDate.setDate(closureDate.getDate() + 3);\n\n  const options = { year: 'numeric', month: 'long', day: 'numeric' };\n  document.getElementById(\"closure-date\").textContent = closureDate.toLocaleDateString('en-US', options);\n</script>",
-            "width": "50%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "liquid_M6UC4L"
-      ],
-      "disabled": true,
-      "name": "t:sections.advanced-content.presets.custom_content.name",
-      "settings": {
-        "full_width": false,
-        "space_around": true,
-        "lazyload_images": true
       }
     },
     "videosglider_UKWUBw": {
@@ -568,27 +566,6 @@
       "name": "Testimonial Grid",
       "settings": {}
     },
-    "text_and_image_yNYQNN": {
-      "type": "text-and-image",
-      "name": "t:sections.text-and-image.presets.image_with_text.name",
-      "settings": {
-        "image_mask": "none",
-        "image2_mask": "none",
-        "subtitle": "",
-        "title": "Meet Pieter & Lisa",
-        "text": "<p>At <strong>Lisa & Peter London</strong>, everything starts with <strong>passion for fashion</strong>. From a young age, Pieter and Lisa shared a lifelong love for style and creativity. Both studied <strong>Fashion Design and Business</strong> before building their careers in the industry. After working for different companies, they came together as a couple and decided to create something of their own.</p><p>Now, more than <strong>10 years later</strong>, they run their store with countless happy clients and inspiring projects. Their mission has always been clear: to stay ahead of <strong>new trends</strong>, deliver <strong>high-quality pieces</strong>, and offer a truly <strong>personal approach</strong>. For Pieter and Lisa, it’s about more than fashion — it’s about making every customer feel seen, valued, and stylish in their own unique way.</p>",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "image_width": "50",
-        "layout": "right",
-        "divider": false,
-        "top_padding": true,
-        "bottom_padding": true,
-        "lazyload_images": true
-      }
-    },
     "advanced_content_rQtHGM": {
       "type": "advanced-content",
       "blocks": {
@@ -839,12 +816,11 @@
     "timer_bar_7fPWPb",
     "advanced_content_JPyT6E",
     "main",
-    "testimonials_EpAxJf",
+    "text_and_image_yNYQNN",
     "featured_collection_zRnJ6y",
-    "advanced_content_WwcBt8",
+    "testimonials_EpAxJf",
     "videosglider_UKWUBw",
     "testimonials_slider_dKBxHe",
-    "text_and_image_yNYQNN",
     "advanced_content_rQtHGM",
     "sub",
     "product-recommendations",
