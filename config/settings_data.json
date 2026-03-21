@@ -571,8 +571,6 @@
     }
   },
   "platform_customizations": {
-    "custom_css": [
-      ".product-single__title {font-size: 24px !important; line-height: 1.05 !important; letter-spacing: 0 !important; margin-bottom: 10px !important;}"
-    ]
+    "custom_css": []
   }
 }
