@@ -9,10 +9,10 @@
 
   .selluxe-follower__container .image-container {
     position: relative;
-    height: {{ image_size | append: "px" }} !important;
-    width: {{ image_size | append: "px" }} !important;
-    min-width: {{ image_size | append: "px" }} !important;
-    min-height: {{ image_size | append: "px" }} !important;
+    height: 44px !important;
+    width: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
     overflow: hidden;
     border-radius: 50%;
     border: 3px solid white;
@@ -37,12 +37,24 @@
   }
 
   .selluxe-follower__text-wrapper {
-    margin-left: 10px;
+    margin-left: 12px;
     line-height: 1.35;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    row-gap: 0;
+    column-gap: 4px;
+  }
+
+  .selluxe-follower__headline {
+    display: inline-flex;
+    align-items: center;
     gap: 4px;
+    white-space: nowrap;
+  }
+
+  .selluxe-follower__subtext {
+    display: inline;
   }
 
   .selluxe-follower__text-wrapper span {
@@ -58,6 +70,7 @@
     display: inline-block;
     object-fit: contain;
     vertical-align: middle;
+    flex-shrink: 0;
   }
 {% endstyle %}
 
@@ -67,8 +80,8 @@
       <img
         src="{{ profile_picture_1 | image_url: width: 360 }}"
         alt="{{ celebrity_name }}"
-        width="{{ image_size }}"
-        height="{{ image_size }}"
+        width="44"
+        height="44"
         loading="lazy"
         class="trust-image trust-image-1"
       >
@@ -78,8 +91,8 @@
       <img
         src="https://uk.icon-amsterdam.com/cdn/shop/files/rico-verhoeven_500x500.png?v=1706123325"
         alt="{{ celebrity_name }}"
-        width="{{ image_size }}"
-        height="{{ image_size }}"
+        width="44"
+        height="44"
         loading="lazy"
         class="trust-image"
       >
@@ -91,8 +104,8 @@
       <img
         src="{{ profile_picture_2 | image_url: width: 360 }}"
         alt="{{ celebrity_name }}"
-        width="{{ image_size }}"
-        height="{{ image_size }}"
+        width="44"
+        height="44"
         loading="lazy"
         class="trust-image"
       >
@@ -104,8 +117,8 @@
       <img
         src="{{ profile_picture_3 | image_url: width: 360 }}"
         alt="{{ celebrity_name }}"
-        width="{{ image_size }}"
-        height="{{ image_size }}"
+        width="44"
+        height="44"
         loading="lazy"
         class="trust-image trust-image-3"
       >
@@ -113,19 +126,20 @@
   {% endif %}
   
   <div class="selluxe-follower__text-wrapper">
-    <span>{{ reviewers }}</span>
+    <span class="selluxe-follower__headline">
+      <span>{{ reviewers }}</span>
+      {% if show_verified %}
+        <img
+          src="{{ 'verified-badge.webp' | asset_url }}"
+          alt="Verified badge"
+          width="15"
+          height="15"
+          loading="lazy"
+          class="selluxe-follower__badge"
+        >
+      {% endif %}
+    </span>
 
-    {% if show_verified %}
-      <img
-        src="{{ 'verified-badge.webp' | asset_url }}"
-        alt="Verified badge"
-        width="15"
-        height="15"
-        loading="lazy"
-        class="selluxe-follower__badge"
-      >
-    {% endif %}
-
-    <span>{{ add_text }}</span>
+    <span class="selluxe-follower__subtext">{{ add_text }}</span>
   </div>
 </div>
