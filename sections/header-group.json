@@ -17,7 +17,7 @@
         "liquid_rrGwdX": {
           "type": "liquid",
           "settings": {
-            "code": "<style>\n  .anniversary-bar {\n    width: 100%;\n    background: #000000;\n    padding: 10px 20px;\n    text-align: center;\n    box-sizing: border-box;\n  }\n  .anniversary-bar p {\n    margin: 0 !important;\n    color: #ffffff !important;\n    font-family: \"Montserrat\", sans-serif !important;\n    font-size: 12px !important;\n    font-weight: 600 !important;\n    letter-spacing: 0.15em !important;\n    text-transform: uppercase !important;\n    line-height: 1.3 !important;\n  }\n</style>\n\n<div class=\"anniversary-bar\">\n  <p>25 Year Anniversary Sale: Up To 70% Off!</p>\n</div>",
+            "code": "<style>\n  .anniversary-bar {\n    width: 100%;\n    background: #000000;\n    padding: 10px 20px;\n    text-align: center;\n    box-sizing: border-box;\n  }\n  .anniversary-bar p {\n    margin: 0 !important;\n    color: #ffffff !important;\n    font-family: \"Montserrat\", sans-serif !important;\n    font-size: 12px !important;\n    font-weight: 600 !important;\n    letter-spacing: 0.15em !important;\n    text-transform: uppercase !important;\n    line-height: 1.5 !important;\n  }\n</style>\n\n<div class=\"anniversary-bar\">\n  <p>25 Year Anniversary Sale:<br>Up To 70% Off!</p>\n</div>",
             "width": "100%",
             "alignment": "center"
           }
