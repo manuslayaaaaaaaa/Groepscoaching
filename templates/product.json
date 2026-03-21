@@ -429,11 +429,10 @@
       "blocks": {
         "text_block_PXYphH": {
           "type": "text_block",
-          "disabled": true,
           "settings": {
-            "icon": "calendar",
-            "title": "30-DAY MONEY-BACK GUARANTEE",
-            "text": "<p>We offer a <strong>30-day return</strong> period. Feel free to return any item within <strong>30 days</strong> if you are not completely satisfied.</p>"
+            "icon": "wallet",
+            "title": "100% Secure Payment",
+            "text": "<p>We offer you a variety of secure payment options. Pay easily and enjoy a safe shopping experience.</p>"
           }
         },
         "text_block_f3GT7y": {
@@ -458,11 +457,10 @@
         "text_block_f3GT7y",
         "text_block_pgeXmX"
       ],
-      "disabled": true,
       "settings": {
         "title": "",
         "align_text": "center",
-        "desktop_columns_per_row": 4,
+        "desktop_columns_per_row": 3,
         "icon_color": "#000000",
         "button_label": "",
         "button_link": "",
