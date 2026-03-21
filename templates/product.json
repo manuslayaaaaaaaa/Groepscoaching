@@ -39,6 +39,28 @@
         "bar_height": 41
       }
     },
+    "advanced_content_JPyT6E": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_GtLq3G": {
+          "type": "liquid",
+          "settings": {
+            "code": "<style>\n  .promo-bar {\n    width: 100%;\n    background: #000000;\n    padding: 12px 20px;\n    text-align: center;\n    box-sizing: border-box;\n  }\n  .promo-bar p {\n    margin: 0 !important;\n    color: #ffffff !important;\n    font-family: \"Montserrat\", sans-serif !important;\n    font-size: 13px !important;\n    font-weight: 600 !important;\n    letter-spacing: 0.08em !important;\n    text-transform: uppercase !important;\n    line-height: 1.4 !important;\n  }\n</style>\n\n<div class=\"promo-bar\">\n  <p>BUY 2, GET AN EXTRA 10% OFF</p>\n</div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_GtLq3G"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "lazyload_images": true
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -815,6 +837,7 @@
   },
   "order": [
     "timer_bar_7fPWPb",
+    "advanced_content_JPyT6E",
     "main",
     "testimonials_EpAxJf",
     "featured_collection_zRnJ6y",
