@@ -103,7 +103,7 @@
         "custom_XFhatC": {
           "type": "custom",
           "settings": {
-            "code": "<div class=\"cus-gua-div\">\n  <div class=\"gua-inner\">\n    <div class=\"gua-icon\">\n      <svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" viewBox=\"0 0 64 64\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><defs><style>.a{stroke-miterlimit:10}</style></defs><path class=\"a\" d=\"M16.5 43.22H6.88V16.5h33.14v26.72H23.94m21.48 0h-5.4V30.4h17.1v12.82h-4.23m4.23-12.82-6.41-8.56H40.02\"/><circle class=\"a\" cx=\"20.24\" cy=\"43.76\" r=\"3.74\"/><path class=\"a\" d=\"M45.42 43.23a3.82 3.82 0 1 1 0 .37v-.37\"/></svg>\n    </div>\n    <p class=\"cus-gua-p\">Free Shipping with UPS</p>\n  </div>\n  <div class=\"gua-inner\">\n    <div class=\"gua-icon\">\n      <svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" viewBox=\"0 0 64 64\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21.18 31.69 28.54 39l15.91-15.88\"/><path d=\"M53 12.54v15.24a31.41 31.41 0 0 1-3.7 14.95A25.46 25.46 0 0 1 32 56a25.46 25.46 0 0 1-17.3-13.27A31.41 31.41 0 0 1 11 27.78V12.54C24.88 13.67 32 8 32 8s7.12 5.67 21 4.54Z\"/></svg>\n    </div>\n    <p class=\"cus-gua-p\">30-Day Money-Back Guarantee</p>\n  </div>\n  <div class=\"gua-inner\">\n    <div class=\"gua-icon\">\n      <svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" viewBox=\"0 0 64 64\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M19.45 23.6v-3.2c0-7 5.89-11.75 12.55-11.75 7.21 0 12.55 5.49 12.55 11.75v3.2M10 23.6h44v31.75H10zm22 13.87v7.47\"/><circle cx=\"32\" cy=\"35.87\" r=\"1.6\"/></svg>\n    </div>\n    <p class=\"cus-gua-p\">Pay securely with Credit Card</p>\n  </div>\n</div>\n<style>\n  .cus-gua-div {\n    margin: 26px 0;\n    display: flex;\n    flex-direction: column;\n    gap: 9px;\n  }\n  .gua-inner {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n  }\n  .gua-icon {\n    width: 26px;\n    height: 26px;\n    flex: 0 0 26px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n  .gua-icon svg {\n    width: 26px;\n    height: 26px;\n    display: block;\n  }\n  .cus-gua-p {\n    margin: 0;\n    line-height: 1.1;\n    color: #000000;\n    font-size: 16px;\n    font-weight: 200;\n    letter-spacing: 0;\n  }\n</style>"
+            "code": "<!-- Montserrat font -->\n<link href=\"https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap\" rel=\"stylesheet\">\n\n<div class=\"cus-gua-div\">\n  <div class=\"gua-inner\">\n    <div class=\"gua-icon\">\n      <svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" viewBox=\"0 0 64 64\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><defs><style>.a{stroke-miterlimit:10}</style></defs><path class=\"a\" d=\"M16.5 43.22H6.88V16.5h33.14v26.72H23.94m21.48 0h-5.4V30.4h17.1v12.82h-4.23m4.23-12.82-6.41-8.56H40.02\"/><circle class=\"a\" cx=\"20.24\" cy=\"43.76\" r=\"3.74\"/><path class=\"a\" d=\"M45.42 43.23a3.82 3.82 0 1 1 0 .37v-.37\"/></svg>\n    </div>\n    <p class=\"cus-gua-p\">Free Shipping with UPS</p>\n  </div>\n\n  <div class=\"gua-inner\">\n    <div class=\"gua-icon\">\n      <svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" viewBox=\"0 0 64 64\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21.18 31.69 28.54 39l15.91-15.88\"/><path d=\"M53 12.54v15.24a31.41 31.41 0 0 1-3.7 14.95A25.46 25.46 0 0 1 32 56a25.46 25.46 0 0 1-17.3-13.27A31.41 31.41 0 0 1 11 27.78V12.54C24.88 13.67 32 8 32 8s7.12 5.67 21 4.54Z\"/></svg>\n    </div>\n    <p class=\"cus-gua-p\">30-Day Money-Back Guarantee</p>\n  </div>\n\n  <div class=\"gua-inner\">\n    <div class=\"gua-icon\">\n      <svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" viewBox=\"0 0 64 64\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M19.45 23.6v-3.2c0-7 5.89-11.75 12.55-11.75 7.21 0 12.55 5.49 12.55 11.75v3.2M10 23.6h44v31.75H10zm22 13.87v7.47\"/><circle cx=\"32\" cy=\"35.87\" r=\"1.6\"/></svg>\n    </div>\n    <p class=\"cus-gua-p\">Pay securely with Credit Card</p>\n  </div>\n</div>\n\n<style>\n  .cus-gua-div {\n    margin: 26px 0;\n    display: flex;\n    flex-direction: column;\n    gap: 9px;\n    font-family: 'Montserrat', sans-serif;\n  }\n\n  .gua-inner {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n  }\n\n  .gua-icon {\n    width: 26px;\n    height: 26px;\n    flex: 0 0 26px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  .gua-icon svg {\n    width: 26px;\n    height: 26px;\n    display: block;\n  }\n\n  .cus-gua-p {\n    margin: 0;\n    line-height: 1.1;\n    color: #000000;\n    font-size: 16px;\n    font-weight: 400;\n    letter-spacing: 0;\n  }\n</style>"
           }
         },
         "buy_buttons": {
@@ -215,6 +215,18 @@
         "lazyload_images": true
       }
     },
+    "featured_collection_zRnJ6y": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Get up to 25% more discount when you buy more",
+        "home_featured_products": "dresses",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
     "testimonials_EpAxJf": {
       "type": "testimonials",
       "blocks": {
@@ -282,18 +294,6 @@
         "round_images": true,
         "color_background": "#ffffff",
         "color_text": "#1c1d1d"
-      }
-    },
-    "featured_collection_zRnJ6y": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Get up to 25% more discount when you buy more",
-        "home_featured_products": "dresses",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": false,
-        "divider": false
       }
     },
     "videosglider_UKWUBw": {
