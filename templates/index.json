@@ -15,7 +15,7 @@
         "liquid_RpALFt": {
           "type": "liquid",
           "settings": {
-            "code": "<div class=\"promo-bar\">\n  <p class=\"promo-bar-text\">Buy 2, Get An Extra 10% Off!</p>\n</div>",
+            "code": "<style>\n  .promo-bar {\n    width: 100%;\n    background: #000000;\n    padding: 12px 20px;\n    text-align: center;\n    box-sizing: border-box;\n  }\n  .promo-bar p {\n    margin: 0 !important;\n    color: #ffffff !important;\n    font-family: \"Montserrat\", sans-serif !important;\n    font-size: 11px !important;\n    font-weight: 700 !important;\n    letter-spacing: 0.3em !important;\n    text-transform: uppercase !important;\n    line-height: 1.2 !important;\n  }\n</style>\n\n<div class=\"promo-bar\">\n  <p><strong>BUY 2, GET AN EXTRA 10% OFF</strong></p>\n</div>",
             "width": "100%",
             "alignment": "center"
           }
