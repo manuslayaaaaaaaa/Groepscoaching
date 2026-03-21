@@ -219,7 +219,7 @@
     "featured_collection_zRnJ6y": {
       "type": "featured-collection",
       "settings": {
-        "title": "Get up to 25% more discount when you buy more",
+        "title": "Get up to 20% more discount when you buy more",
         "home_featured_products": "dresses",
         "per_row": 4,
         "rows": 1,
@@ -323,41 +323,6 @@
       "type": "collection-return",
       "disabled": true,
       "settings": {}
-    },
-    "faq_N9hAPP": {
-      "type": "faq",
-      "blocks": {
-        "question_gXfXEb": {
-          "type": "question",
-          "settings": {
-            "title": "How Can I Track My Order?",
-            "text": "<p>Once your order is confirmed, you will receive an email with your order number. To <strong>track your order!</strong></p>"
-          }
-        },
-        "question_t4YRrf": {
-          "type": "question",
-          "settings": {
-            "title": "What is the Return Policy?",
-            "text": "<p>You can return items within <strong>30 calendar days</strong> of receiving them.</p><ul><li>Return shipping costs are the buyer’s responsibility.</li><li>Approved refunds will be issued to your original payment method.</li></ul>"
-          }
-        },
-        "question_fTgniy": {
-          "type": "question",
-          "settings": {
-            "title": "I Have an Issue With My Order. How Can I Contact You?",
-            "text": "<p>If you experience any issues or have questions, visit our <strong>Contact Page </strong>to connect with our support team. We’re here to assist you promptly!</p>"
-          }
-        }
-      },
-      "block_order": [
-        "question_gXfXEb",
-        "question_t4YRrf",
-        "question_fTgniy"
-      ],
-      "name": "t:sections.faq.presets.faq.name",
-      "settings": {
-        "title": "FAQs"
-      }
     },
     "testimonials_XJpjRp": {
       "type": "testimonials",
@@ -468,47 +433,39 @@
         "divider": false
       }
     },
-    "1759238496adc47e65": {
-      "type": "apps",
+    "faq_N9hAPP": {
+      "type": "faq",
+      "blocks": {
+        "question_gXfXEb": {
+          "type": "question",
+          "settings": {
+            "title": "How Can I Track My Order?",
+            "text": "<p>Once your order is confirmed, you will receive an email with your order number. To <strong>track your order!</strong></p>"
+          }
+        },
+        "question_t4YRrf": {
+          "type": "question",
+          "settings": {
+            "title": "What is the Return Policy?",
+            "text": "<p>You can return items within <strong>30 calendar days</strong> of receiving them.</p><ul><li>Return shipping costs are the buyer’s responsibility.</li><li>Approved refunds will be issued to your original payment method.</li></ul>"
+          }
+        },
+        "question_fTgniy": {
+          "type": "question",
+          "settings": {
+            "title": "I Have an Issue With My Order. How Can I Contact You?",
+            "text": "<p>If you experience any issues or have questions, visit our <strong>Contact Page </strong>to connect with our support team. We’re here to assist you promptly!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_gXfXEb",
+        "question_t4YRrf",
+        "question_fTgniy"
+      ],
+      "name": "t:sections.faq.presets.faq.name",
       "settings": {
-        "full_width": false,
-        "space_around": true
-      }
-    },
-    "ss_social_proof_TGDf48": {
-      "type": "ss-social-proof",
-      "name": "SS - Social proof",
-      "settings": {
-        "coupon_position": "below_title",
-        "image_size": 30,
-        "image_size_mobile": 25,
-        "image_radius": 100,
-        "image_border_thickness": 0,
-        "text": "<p><strong>Davie</strong> ✓, <strong>Mark</strong> ✓ and <strong>1500+</strong> others love our products!</p>",
-        "text_custom": false,
-        "text_font": "josefin_sans_n4",
-        "text_size": 13,
-        "text_size_mobile": 13,
-        "text_height": 150,
-        "text_align": "left",
-        "text_align_mobile": "left",
-        "text_color": "#121212",
-        "icon_color": "#42a5f5",
-        "image_border_color": "#121212",
-        "background_style": "solid",
-        "background_color": "#f3f3f3",
-        "background_gradient": "linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 100%)",
-        "border_color": "#121212",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "padding_top": 10,
-        "padding_bottom": 10,
-        "padding_horizontal": 10,
-        "padding_horizontal_mobile": 10,
-        "border_style": "solid",
-        "border_thickness": 0,
-        "section_radius": 0,
-        "lazy": false
+        "title": "FAQs"
       }
     }
   },
@@ -523,10 +480,8 @@
     "product-recommendations",
     "recently-viewed",
     "collection-return",
-    "faq_N9hAPP",
     "testimonials_XJpjRp",
     "text_with_icons_Q8WN8G",
-    "1759238496adc47e65",
-    "ss_social_proof_TGDf48"
+    "faq_N9hAPP"
   ]
 }
