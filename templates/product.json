@@ -439,15 +439,15 @@
           "type": "text_block",
           "settings": {
             "icon": "truck",
-            "title": "FREE DELIVERY",
-            "text": "<p>We offer <strong>free shipping</strong> incl. Track & Trace to the United Kingdom!</p>"
+            "title": "Free Insured Shipping With UPS",
+            "text": "<p>We offer Free Shipping for maximum customer comfort. Your satisfaction is important to us, which is why we offer smooth and free delivery.</p>"
           }
         },
         "text_block_pgeXmX": {
           "type": "text_block",
           "settings": {
             "icon": "shield",
-            "title": "SECURE PAYMENT",
+            "title": "30 Day Money Back Guarantee",
             "text": "<p>At <strong>Lisa & Peter London</strong>, you can securely and conveniently pay for your order using credit card.</p>"
           }
         }
