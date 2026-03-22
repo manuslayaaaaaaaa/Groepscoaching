@@ -114,6 +114,12 @@
             "show_gift_card_recipient": false
           }
         },
+        "custom_aTRygX": {
+          "type": "custom",
+          "settings": {
+            "code": "<div class=\"ultimate-badges\"></div>"
+          }
+        },
         "custom_KhiznC": {
           "type": "custom",
           "settings": {
@@ -170,6 +176,7 @@
         "separator_ALzLC8",
         "custom_XFhatC",
         "buy_buttons",
+        "custom_aTRygX",
         "custom_KhiznC",
         "ea05bd8c-ce3b-4efc-9331-8543471e68d9",
         "description",
