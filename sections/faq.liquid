@@ -10,337 +10,200 @@
     </header>
   {%- endif -%}
 
-  {%- if section.blocks.size > 0 -%}
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {% for block in section.blocks %}
-            {% case block.type %}
-              {% when 'question' %}
-                {
-                  "@type": "Question",
-                  "name": {{ block.settings.title | json }},
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": {{ block.settings.text | json }}
-                  }
-                }{% unless forloop.last %},{% endunless %}
-            {% endcase %}
-          {% endfor %}
-        ]
-      }
-    </script>
+  <div class="faq-custom-list">
+    {%- for block in section.blocks -%}
+      <div class="faq-custom-item" {{ block.shopify_attributes }}>
 
-    <div class="faq-custom-list">
-      {%- for block in section.blocks -%}
-        <div {{ block.shopify_attributes }}>
-          {% case block.type %}
-            {% when 'rich-text' %}
-              <div class="index-section index-section--faq">
-                <div class="text-{{ block.settings.align_text }}">
-                  {%- if block.settings.title != blank -%}
-                    <p class="h2">
-                      {{ block.settings.title | escape }}
-                    </p>
-                  {%- endif -%}
-                  {%- if block.settings.text != blank -%}
-                    <div class="rte">
-                      {{ block.settings.text }}
-                    </div>
-                  {%- endif -%}
-                </div>
-              </div>
+        <button
+          type="button"
+          class="collapsible-trigger faq-custom-trigger"
+          aria-controls="FAQ-content-{{ block.id }}"
+          aria-expanded="false"
+        >
+          <span class="faq-custom-question-text">{{ block.settings.title }}</span>
+          <span class="faq-custom-arrow"></span>
+        </button>
 
-            {% when 'question' %}
-              <div class="faq-custom-item">
-                <button
-                  type="button"
-                  class="collapsible-trigger collapsible-trigger--inline collapsible--auto-height text-left faq-custom-trigger"
-                  aria-controls="FAQ-content-{{ block.id }}"
-                  aria-expanded="false"
-                >
-                  <span class="faq-custom-question-text">{{ block.settings.title }}</span>
-                  <span class="faq-custom-arrow" aria-hidden="true"></span>
-                </button>
-
-                <div id="FAQ-content-{{ block.id }}" class="collapsible-content collapsible-content--all faq-custom-content">
-                  <div class="collapsible-content__inner collapsible-content__inner--faq rte faq-custom-answer">
-                    {{ block.settings.text }}
-                  </div>
-                </div>
-              </div>
-          {% endcase %}
+        <div id="FAQ-content-{{ block.id }}" class="collapsible-content faq-custom-content">
+          <div class="faq-custom-answer">
+            {{ block.settings.text }}
+          </div>
         </div>
-      {%- endfor -%}
-    </div>
-  {%- endif -%}
 
-  {%- if section.blocks.size == 0 -%}
-    <div class="placeholder-noblocks">
-      {{ 'home_page.onboarding.no_content' | t }}
-    </div>
-  {%- endif -%}
+      </div>
+    {%- endfor -%}
+  </div>
+
 </div>
 
 {%- if section.settings.divider -%}</div>{%- endif -%}
 
 <style>
-  #faq-section-{{ section.id }} {
-    font-family: "Montserrat", sans-serif;
-  }
+#faq-section-{{ section.id }} {
+  font-family: "Montserrat", sans-serif;
+}
 
-  #faq-section-{{ section.id }} .faq-custom-header {
-    margin-bottom: 18px;
-  }
+/* TITLE */
+#faq-section-{{ section.id }} .faq-custom-title {
+  font-size: 32px !important;
+  font-weight: 400 !important;
+  text-align: center;
+  margin-bottom: 12px;
+}
 
-  #faq-section-{{ section.id }} .faq-custom-title {
-    font-family: "Montserrat", sans-serif !important;
-    font-size: 32px !important;
-    line-height: 1.1 !important;
-    font-weight: 400 !important;
-    letter-spacing: 0.01em !important;
-    color: #000000 !important;
-    text-transform: none !important;
-    text-align: center;
-    margin: 0 0 10px 0 !important;
-  }
+/* LIST */
+#faq-section-{{ section.id }} .faq-custom-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 
-  #faq-section-{{ section.id }} .faq-custom-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
+/* ITEM */
+#faq-section-{{ section.id }} .faq-custom-trigger {
+  width: 100%;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
 
-  #faq-section-{{ section.id }} .faq-custom-item {
-    margin: 0;
-  }
+  padding: 13px 20px !important;
+  min-height: 52px;
 
+  border-radius: 10px !important;
+  border: none !important;
+
+  background: #f7f7f7 !important;
+  color: #000 !important;
+
+  transition: none !important;
+}
+
+/* HOVER = alleen tekst */
+#faq-section-{{ section.id }} .faq-custom-trigger:hover {
+  background: #f7f7f7 !important;
+}
+
+#faq-section-{{ section.id }} .faq-custom-trigger:hover .faq-custom-question-text {
+  color: #ededed !important;
+}
+
+/* TEXT */
+#faq-section-{{ section.id }} .faq-custom-question-text {
+  font-size: 15px !important;
+  font-weight: 450 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+
+  color: #000 !important;
+
+  transition: none !important;
+}
+
+/* OUDE ICONEN WEG */
+#faq-section-{{ section.id }} svg,
+#faq-section-{{ section.id }} .icon {
+  display: none !important;
+}
+
+/* ARROW */
+#faq-section-{{ section.id }} .faq-custom-arrow {
+  width: 9px;
+  height: 9px;
+
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+/* OPEN STATE */
+#faq-section-{{ section.id }} .faq-custom-trigger.is-open .faq-custom-arrow {
+  transform: rotate(135deg);
+}
+
+/* ANSWER */
+#faq-section-{{ section.id }} .faq-custom-answer {
+  padding: 12px 20px 4px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #000;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
   #faq-section-{{ section.id }} .faq-custom-trigger {
-    width: 100%;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    gap: 14px;
-    padding: 15px 20px !important;
-    border: 0 !important;
-    border-radius: 10px !important;
-    background: #f7f7f7 !important;
-    color: #000000 !important;
-    box-shadow: none !important;
-    min-height: 56px;
-    transition: none !important;
+    padding: 13px 20px !important;
+    min-height: 52px;
   }
-
-  #faq-section-{{ section.id }} .faq-custom-trigger:hover {
-    background: #f7f7f7 !important;
-    color: #000000 !important;
-  }
-
-  #faq-section-{{ section.id }} .faq-custom-trigger:hover .faq-custom-question-text {
-    color: #ededed !important;
-  }
-
-  #faq-section-{{ section.id }} .faq-custom-question-text {
-    font-family: "Montserrat", sans-serif !important;
-    font-size: 15px !important;
-    line-height: 1.35 !important;
-    font-weight: 400 !important;
-    letter-spacing: 0.18em !important;
-    text-transform: uppercase !important;
-    color: #000000 !important;
-    flex: 1 1 auto;
-    transition: color 0.2s ease !important;
-  }
-
-  /* oude iconen weg */
-  #faq-section-{{ section.id }} .collapsible-trigger__icon,
-  #faq-section-{{ section.id }} .collapsible-trigger .icon,
-  #faq-section-{{ section.id }} .faq-custom-trigger svg {
-    display: none !important;
-  }
-
-  /* nieuw pijltje */
-  #faq-section-{{ section.id }} .faq-custom-arrow {
-    width: 9px;
-    height: 9px;
-    border-top: 2px solid #000000;
-    border-right: 2px solid #000000;
-    transform: rotate(45deg);
-    flex: 0 0 auto;
-    transition: transform 0.2s ease !important;
-    margin-left: 12px;
-  }
-
-  /* open state */
-  #faq-section-{{ section.id }} .faq-custom-trigger.is-open .faq-custom-arrow {
-    transform: rotate(135deg);
-  }
-
-  #faq-section-{{ section.id }} .faq-custom-content {
-    background: transparent !important;
-  }
-
-  #faq-section-{{ section.id }} .faq-custom-answer {
-    padding: 14px 20px 4px 20px !important;
-  }
-
-  #faq-section-{{ section.id }} .faq-custom-answer,
-  #faq-section-{{ section.id }} .faq-custom-answer p {
-    font-family: "Montserrat", sans-serif !important;
-    font-size: 15px !important;
-    line-height: 1.6 !important;
-    font-weight: 400 !important;
-    letter-spacing: 0 !important;
-    color: #000000 !important;
-    margin: 0 !important;
-  }
-
-  #faq-section-{{ section.id }} .faq-custom-answer p + p {
-    margin-top: 12px !important;
-  }
-
-  @media only screen and (max-width: 768px) {
-    #faq-section-{{ section.id }} {
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    #faq-section-{{ section.id }} .faq-custom-title {
-      font-size: 32px !important;
-      margin-bottom: 10px !important;
-    }
-
-    #faq-section-{{ section.id }} .faq-custom-trigger {
-      padding: 15px 20px !important;
-      min-height: 56px;
-      border-radius: 10px !important;
-    }
-
-    #faq-section-{{ section.id }} .faq-custom-question-text {
-      font-size: 15px !important;
-      line-height: 1.35 !important;
-      letter-spacing: 0.18em !important;
-    }
-
-    #faq-section-{{ section.id }} .faq-custom-answer,
-    #faq-section-{{ section.id }} .faq-custom-answer p {
-      font-size: 15px !important;
-      line-height: 1.58 !important;
-    }
-  }
+}
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const faqSection = document.querySelector('#faq-section-{{ section.id }}');
-    if (!faqSection) return;
+document.addEventListener('DOMContentLoaded', function () {
+  const section = document.querySelector('#faq-section-{{ section.id }}');
+  if (!section) return;
 
-    const triggers = faqSection.querySelectorAll('.faq-custom-trigger');
+  const triggers = section.querySelectorAll('.faq-custom-trigger');
 
-    triggers.forEach((trigger) => {
-      trigger.addEventListener('click', function () {
-        setTimeout(() => {
-          const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
-          trigger.classList.toggle('is-open', isExpanded);
-        }, 10);
+  triggers.forEach(trigger => {
+    trigger.addEventListener('click', function () {
+      const content = document.getElementById(trigger.getAttribute('aria-controls'));
+      const isOpen = trigger.classList.contains('is-open');
+
+      /* close all */
+      triggers.forEach(t => {
+        t.classList.remove('is-open');
+        t.setAttribute('aria-expanded', 'false');
+        const c = document.getElementById(t.getAttribute('aria-controls'));
+        if (c) c.style.display = 'none';
       });
+
+      /* open current */
+      if (!isOpen) {
+        trigger.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+        if (content) content.style.display = 'block';
+      }
     });
   });
+});
 </script>
 
 {% schema %}
 {
-  "name": "t:sections.faq.name",
-  "class": "index-section",
+  "name": "FAQ",
   "settings": [
     {
       "type": "text",
       "id": "title",
-      "label": "t:sections.faq.settings.title.label",
-      "default": "FAQs"
-    },
-    {
-      "type": "checkbox",
-      "id": "divider",
-      "label": "Show section divider",
-      "default": false
+      "default": "FAQs",
+      "label": "Heading"
     }
   ],
   "blocks": [
     {
-      "type": "rich-text",
-      "name": "t:sections.faq.blocks.rich_text.name",
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "t:sections.faq.blocks.rich_text.settings.title.label",
-          "default": "Rich text"
-        },
-        {
-          "type": "richtext",
-          "id": "text",
-          "label": "t:sections.faq.blocks.rich_text.settings.text.label",
-          "default": "<p>Use this section for any descriptive text you need to fill out your pages or to add introductory headings between other blocks.</p>"
-        },
-        {
-          "type": "select",
-          "id": "align_text",
-          "label": "t:sections.faq.blocks.rich_text.settings.align_text.label",
-          "default": "left",
-          "options": [
-            {
-              "value": "left",
-              "label": "Left"
-            },
-            {
-              "value": "center",
-              "label": "Center"
-            },
-            {
-              "value": "right",
-              "label": "Right"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "type": "question",
-      "name": "t:sections.faq.blocks.question.name",
+      "name": "Question",
       "settings": [
         {
           "type": "text",
           "id": "title",
-          "label": "t:sections.faq.blocks.question.settings.title.label",
-          "default": "Frequently asked question"
+          "label": "Question",
+          "default": "Your question"
         },
         {
           "type": "richtext",
           "id": "text",
-          "label": "t:sections.faq.blocks.question.settings.text.label",
-          "default": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
+          "label": "Answer",
+          "default": "<p>Your answer here</p>"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "t:sections.faq.presets.faq.name",
-      "blocks": [
-        {
-          "type": "question"
-        },
-        {
-          "type": "question"
-        }
-      ]
+      "name": "FAQ"
     }
-  ],
-  "disabled_on": {
-    "groups": ["footer", "header", "custom.popups"]
-  }
+  ]
 }
 {% endschema %}
