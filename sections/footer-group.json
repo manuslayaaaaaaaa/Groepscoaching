@@ -55,6 +55,7 @@
         "16f46420-be73-4503-875a-4e9c1c8d139e",
         "footer-1"
       ],
+      "custom_css": [],
       "settings": {
         "show_locale_selector": true,
         "show_currency_selector": false,
