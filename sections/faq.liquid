@@ -59,9 +59,10 @@
                   type="button"
                   class="collapsible-trigger collapsible-trigger--inline collapsible--auto-height text-left faq-custom-trigger"
                   aria-controls="FAQ-content-{{ block.id }}"
+                  aria-expanded="false"
                 >
-                  {%- render 'collapsible-icons-alt', no_circle: true -%}
                   <span class="faq-custom-question-text">{{ block.settings.title }}</span>
+                  <span class="faq-custom-arrow" aria-hidden="true"></span>
                 </button>
 
                 <div id="FAQ-content-{{ block.id }}" class="collapsible-content collapsible-content--all faq-custom-content">
@@ -129,33 +130,52 @@
     color: #000000 !important;
     box-shadow: none !important;
     min-height: 56px;
+    transition: none !important;
   }
 
   #faq-section-{{ section.id }} .faq-custom-trigger:hover {
-    background: #ededed !important;
+    background: #f7f7f7 !important;
     color: #000000 !important;
+  }
+
+  #faq-section-{{ section.id }} .faq-custom-trigger:hover .faq-custom-question-text {
+    color: #ededed !important;
   }
 
   #faq-section-{{ section.id }} .faq-custom-question-text {
     font-family: "Montserrat", sans-serif !important;
     font-size: 15px !important;
     line-height: 1.35 !important;
-    font-weight: 500 !important;
-    letter-spacing: 0.12em !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.18em !important;
     text-transform: uppercase !important;
     color: #000000 !important;
     flex: 1 1 auto;
+    transition: color 0.2s ease !important;
   }
 
+  /* oude iconen weg */
   #faq-section-{{ section.id }} .collapsible-trigger__icon,
   #faq-section-{{ section.id }} .collapsible-trigger .icon,
   #faq-section-{{ section.id }} .faq-custom-trigger svg {
-    color: #000000 !important;
-    fill: #000000 !important;
-    stroke: #000000 !important;
-    width: 18px !important;
-    height: 18px !important;
+    display: none !important;
+  }
+
+  /* nieuw pijltje */
+  #faq-section-{{ section.id }} .faq-custom-arrow {
+    width: 9px;
+    height: 9px;
+    border-top: 2px solid #000000;
+    border-right: 2px solid #000000;
+    transform: rotate(45deg);
     flex: 0 0 auto;
+    transition: transform 0.2s ease !important;
+    margin-left: 12px;
+  }
+
+  /* open state */
+  #faq-section-{{ section.id }} .faq-custom-trigger.is-open .faq-custom-arrow {
+    transform: rotate(135deg);
   }
 
   #faq-section-{{ section.id }} .faq-custom-content {
@@ -201,7 +221,7 @@
     #faq-section-{{ section.id }} .faq-custom-question-text {
       font-size: 15px !important;
       line-height: 1.35 !important;
-      letter-spacing: 0.12em !important;
+      letter-spacing: 0.18em !important;
     }
 
     #faq-section-{{ section.id }} .faq-custom-answer,
@@ -211,6 +231,24 @@
     }
   }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const faqSection = document.querySelector('#faq-section-{{ section.id }}');
+    if (!faqSection) return;
+
+    const triggers = faqSection.querySelectorAll('.faq-custom-trigger');
+
+    triggers.forEach((trigger) => {
+      trigger.addEventListener('click', function () {
+        setTimeout(() => {
+          const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+          trigger.classList.toggle('is-open', isExpanded);
+        }, 10);
+      });
+    });
+  });
+</script>
 
 {% schema %}
 {
@@ -222,6 +260,12 @@
       "id": "title",
       "label": "t:sections.faq.settings.title.label",
       "default": "FAQs"
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "Show section divider",
+      "default": false
     }
   ],
   "blocks": [
@@ -249,15 +293,15 @@
           "options": [
             {
               "value": "left",
-              "label": "t:sections.faq.blocks.rich_text.settings.align_text.options.left.label"
+              "label": "Left"
             },
             {
               "value": "center",
-              "label": "t:sections.faq.blocks.rich_text.settings.align_text.options.center.label"
+              "label": "Center"
             },
             {
               "value": "right",
-              "label": "t:sections.faq.blocks.rich_text.settings.align_text.options.right.label"
+              "label": "Right"
             }
           ]
         }
