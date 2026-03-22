@@ -180,23 +180,30 @@
     background: transparent !important;
   }
 
-  #faq-section-{{ section.id }} .faq-custom-answer {
-    padding: 14px 22px 4px 22px !important;
-    font-size: 13px !important;
-    line-height: 1.6 !important;
-    color: #000000 !important;
-  }
+ #faq-section-{{ section.id }} .faq-custom-answer {
+  padding: 14px 22px 4px 22px !important;
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+  color: #000000 !important;
+  opacity: 0;
+  transform: none;
+  transition: opacity 0.28s ease !important;
+}
 
-  #faq-section-{{ section.id }} .faq-custom-answer,
-  #faq-section-{{ section.id }} .faq-custom-answer p {
-    font-family: "Montserrat", sans-serif !important;
-    font-size: 13px !important;
-    line-height: 1.6 !important;
-    font-weight: 400 !important;
-    letter-spacing: 0 !important;
-    color: #000000 !important;
-    margin: 0 !important;
-  }
+#faq-section-{{ section.id }} .faq-custom-answer,
+#faq-section-{{ section.id }} .faq-custom-answer p {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  color: #000000 !important;
+  margin: 0 !important;
+}
+
+#faq-section-{{ section.id }} .faq-custom-trigger.is-open + .faq-custom-content .faq-custom-answer {
+  opacity: 1;
+}
 
   #faq-section-{{ section.id }} .faq-custom-answer p + p {
     margin-top: 12px !important;
