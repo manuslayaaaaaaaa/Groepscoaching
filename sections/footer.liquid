@@ -24,6 +24,69 @@
   {%- endstyle -%}
 {%- endif -%}
 
+{%- style -%}
+  /* Payment icons altijd centreren */
+  .site-footer .payment-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  .site-footer .payment-icons .icon--payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Normale footertekst net iets dikker */
+  .site-footer p,
+  .site-footer li,
+  .site-footer a,
+  .site-footer span,
+  .site-footer .rte,
+  .site-footer .footer__small-text {
+    font-weight: 500;
+  }
+
+  /* Mobiele weergave footer centreren */
+  @media only screen and (max-width: 768px) {
+    .site-footer,
+    .site-footer .page-width,
+    .site-footer .grid,
+    .site-footer [class*="footer__item--"],
+    .site-footer .footer__section,
+    .site-footer .rte,
+    .site-footer p,
+    .site-footer li,
+    .site-footer a,
+    .site-footer span {
+      text-align: center;
+    }
+
+    .site-footer .grid__item {
+      width: 100%;
+      float: none;
+    }
+
+    .site-footer ul,
+    .site-footer ol {
+      padding-left: 0;
+      list-style-position: inside;
+    }
+
+    .site-footer .payment-icons {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+{%- endstyle -%}
+
 <footer class="site-footer" data-section-id="{{ section.id }}" data-section-type="footer-section">
   <div class="page-width">
 
