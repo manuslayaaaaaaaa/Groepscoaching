@@ -114,16 +114,16 @@
             "show_gift_card_recipient": false
           }
         },
-        "custom_aTRygX": {
-          "type": "custom",
-          "settings": {
-            "code": "<div class=\"ultimate-badges\"></div>"
-          }
-        },
         "custom_KhiznC": {
           "type": "custom",
           "settings": {
             "code": "{% assign ship_timestamp = 'now' | date: '%s' | plus: 172800 %}\n{% assign ship_weekday = ship_timestamp | date: '%a' %}\n{% assign ship_month = ship_timestamp | date: '%b' %}\n{% assign ship_day = ship_timestamp | date: '%-d' %}\n\n<div class=\"shipping-bar\">\n  <div class=\"shipping-bar__left\">\n    <span class=\"shipping-bar__pulse\"></span>\n    <span class=\"shipping-bar__text\">\n      Ships by {{ ship_weekday }}, {{ ship_month }} {{ ship_day }}\n    </span>\n  </div>\n\n  <div class=\"shipping-bar__right\">\n    <img\n      class=\"shipping-bar__flag\"\n      src=\"https://cdn.shopify.com/s/files/1/0947/5014/6825/t/2/assets/1-ezgif.com-webp-to-png-converter.png?v=1749726846\"\n      alt=\"US flag\"\n      loading=\"lazy\"\n    >\n    <span class=\"shipping-bar__shipping-text\"><strong>Free</strong> Shipping</span>\n  </div>\n</div>\n\n<style>\n  .shipping-bar {\n    width: 100%;\n    background: #f5f5f5;\n    border-radius: 14px;\n    padding: 10px 14px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    font-family: 'Montserrat', sans-serif;\n  }\n\n  .shipping-bar__left {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n  }\n\n  .shipping-bar__right {\n    display: flex;\n    align-items: center;\n    gap: 6px;\n    margin-left: auto;\n    white-space: nowrap;\n  }\n\n  /* Pulse dot (kleiner + subtieler) */\n  .shipping-bar__pulse {\n    width: 10px;\n    height: 10px;\n    min-width: 10px;\n    border-radius: 50%;\n    background: #2c565b;\n    animation: shippingPulse 1.2s ease-in-out infinite;\n  }\n\n  @keyframes shippingPulse {\n    0% { background: #2c565b; }\n    50% { background: #8fa3a6; }\n    100% { background: #2c565b; }\n  }\n\n  /* Tekst veel subtieler */\n  .shipping-bar__text,\n  .shipping-bar__shipping-text {\n    font-size: 14px;\n    line-height: 1.2;\n    color: #111;\n    font-weight: 400;\n  }\n\n  .shipping-bar__shipping-text strong {\n    font-weight: 600;\n  }\n\n  /* Flag kleiner */\n  .shipping-bar__flag {\n    width: 18px;\n    height: 18px;\n    min-width: 18px;\n    border-radius: 50%;\n    object-fit: cover;\n  }\n\n  /* Mobile nog iets compacter */\n  @media screen and (max-width: 749px) {\n    .shipping-bar {\n      padding: 8px 12px;\n      border-radius: 12px;\n    }\n\n    .shipping-bar__text,\n    .shipping-bar__shipping-text {\n      font-size: 13px;\n    }\n\n    .shipping-bar__pulse {\n      width: 8px;\n      height: 8px;\n    }\n\n    .shipping-bar__flag {\n      width: 16px;\n      height: 16px;\n    }\n  }\n</style>"
+          }
+        },
+        "custom_aTRygX": {
+          "type": "custom",
+          "settings": {
+            "code": "<div class=\"ultimate-badges\"></div>"
           }
         },
         "ea05bd8c-ce3b-4efc-9331-8543471e68d9": {
@@ -176,8 +176,8 @@
         "separator_ALzLC8",
         "custom_XFhatC",
         "buy_buttons",
-        "custom_aTRygX",
         "custom_KhiznC",
+        "custom_aTRygX",
         "ea05bd8c-ce3b-4efc-9331-8543471e68d9",
         "description",
         "tab",
