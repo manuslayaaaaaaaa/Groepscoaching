@@ -156,7 +156,7 @@
               {%- for block in blocks -%}
                 {%- case block.type -%}
                   {%- when '@app' -%}
-                    {% render block %}
+  {% comment %} Disabled app auto-render to control placement manually {% endcomment %}
                   {%- when 'selluxe_followers' -%}
                     {% render 'selluxe-follower-block',
                       profile_picture_1:block.settings.profile_picture_1,
