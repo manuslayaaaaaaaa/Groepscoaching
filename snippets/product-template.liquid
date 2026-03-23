@@ -483,14 +483,10 @@
         }
       }
 
-      /* Verberg automatisch geïnjecteerde badges */
-.ultimateTrustBadgesWidgetDiv {
+      /* Verberg automatisch geïnjecteerde badges binnen de form */
+form .ultimateTrustBadgesWidgetDiv,
+.product-form .ultimateTrustBadgesWidgetDiv {
   display: none !important;
-}
-
-/* Toon alleen de handmatig geplaatste badges */
-.ultimate-badges .ultimateTrustBadgesWidgetDiv {
-  display: block !important;
 }
                   {%- when 'sales_point' -%}
                     {%- unless block.settings.text == blank -%}
