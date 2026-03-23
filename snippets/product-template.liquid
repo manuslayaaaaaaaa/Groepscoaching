@@ -339,26 +339,150 @@
                       {%- endunless -%}
                     </div>
                   {%- when 'buy_buttons' -%}
-                    <div class="product-block" {{ block.shopify_attributes }}>
-                      {%- unless product.empty? -%}
-                        <div class="product-block">
-                          {%- render 'product-form',
-                            form_id: form_id,
-                            product: product,
-                            show_dynamic_checkout: block.settings.show_dynamic_checkout,
-                            current_variant: current_variant,
-                            block: block,
-                          -%}
-                        </div>
-                      {%- endunless -%}
+  <div class="product-block" {{ block.shopify_attributes }}>
+    {%- unless product.empty? -%}
+      <div class="product-block">
+        {%- render 'product-form',
+          form_id: form_id,
+          product: product,
+          show_dynamic_checkout: block.settings.show_dynamic_checkout,
+          current_variant: current_variant,
+          block: block,
+        -%}
+      </div>
+    {%- endunless -%}
 
-                      {%- if block.settings.surface_pickup_enable -%}
-                        <div data-store-availability-holder
-                          data-product-name="{{ product.title | escape }}"
-                          data-base-url="{{ shop.url }}{{ routes.root_url }}"
-                          ></div>
-                      {%- endif -%}
-                    </div>
+    {%- if block.settings.surface_pickup_enable -%}
+      <div data-store-availability-holder
+        data-product-name="{{ product.title | escape }}"
+        data-base-url="{{ shop.url }}{{ routes.root_url }}"
+        ></div>
+    {%- endif -%}
+  </div>
+
+  {% assign ship_timestamp = 'now' | date: '%s' | plus: 172800 %}
+  {% assign ship_weekday = ship_timestamp | date: '%a' %}
+  {% assign ship_month = ship_timestamp | date: '%b' %}
+  {% assign ship_day = ship_timestamp | date: '%-d' %}
+
+  <div class="product-block">
+    <div class="shipping-bar">
+      <div class="shipping-bar__left">
+        <span class="shipping-bar__pulse"></span>
+        <span class="shipping-bar__text">
+          Ships by {{ ship_weekday }}, {{ ship_month }} {{ ship_day }}
+        </span>
+      </div>
+
+      <div class="shipping-bar__right">
+        <img
+          class="shipping-bar__flag"
+          src="https://cdn.shopify.com/s/files/1/0947/5014/6825/t/2/assets/1-ezgif.com-webp-to-png-converter.png?v=1749726846"
+          alt="US flag"
+          loading="lazy"
+        >
+        <span class="shipping-bar__shipping-text"><strong>Free</strong> Shipping</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-block">
+    <div class="ultimate-badges"></div>
+  </div>
+
+  <style>
+    .shipping-bar {
+      width: 100%;
+      background: #f5f5f5;
+      border-radius: 14px;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 10px;
+    }
+
+    .shipping-bar__left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    .shipping-bar__right {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-left: auto;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .shipping-bar__pulse {
+      width: 10px;
+      height: 10px;
+      min-width: 10px;
+      border-radius: 50%;
+      background: #2c565b;
+      animation: shippingPulse 1.2s ease-in-out infinite;
+    }
+
+    @keyframes shippingPulse {
+      0% { background: #2c565b; }
+      50% { background: #8fa3a6; }
+      100% { background: #2c565b; }
+    }
+
+    .shipping-bar__text,
+    .shipping-bar__shipping-text {
+      font-size: 14px;
+      line-height: 1.2;
+      color: #111;
+      font-weight: 400;
+    }
+
+    .shipping-bar__shipping-text strong {
+      font-weight: 600;
+    }
+
+    .shipping-bar__flag {
+      width: 18px;
+      height: 18px;
+      min-width: 18px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .ultimate-badges {
+      margin-top: 10px;
+    }
+
+    @media screen and (max-width: 749px) {
+      .shipping-bar {
+        padding: 8px 12px;
+        border-radius: 12px;
+      }
+
+      .shipping-bar__text,
+      .shipping-bar__shipping-text {
+        font-size: 13px;
+      }
+
+      .shipping-bar__pulse {
+        width: 8px;
+        height: 8px;
+        min-width: 8px;
+      }
+
+      .shipping-bar__flag {
+        width: 16px;
+        height: 16px;
+        min-width: 16px;
+      }
+    }
+  </style>
                   {%- when 'sales_point' -%}
                     {%- unless block.settings.text == blank -%}
                       <div class="product-block product-block--sales-point" {{ block.shopify_attributes }}>
