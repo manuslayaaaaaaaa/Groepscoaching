@@ -38,7 +38,6 @@
       {%- for block in section.blocks -%}
         <div {{ block.shopify_attributes }}>
           {%- case block.type -%}
-
             {%- when 'rich-text' -%}
               <div class="index-section index-section--faq">
                 <div class="text-{{ block.settings.align_text }}">
@@ -72,7 +71,6 @@
                   </div>
                 </div>
               </div>
-
           {%- endcase -%}
         </div>
       {%- endfor -%}
@@ -95,6 +93,10 @@
     font-family: "Montserrat", sans-serif;
   }
 
+  #faq-section-{{ section.id }} .faq-custom-header {
+    margin-bottom: 24px;
+  }
+
   #faq-section-{{ section.id }} .faq-custom-title {
     font-family: "Tenor Sans", sans-serif !important;
     font-size: 32px !important;
@@ -102,7 +104,9 @@
     font-weight: 400 !important;
     letter-spacing: 0.01em !important;
     color: #000000 !important;
+    text-transform: none !important;
     text-align: center;
+    margin: 0 0 12px 0 !important;
   }
 
   #faq-section-{{ section.id }} .faq-custom-list {
@@ -111,30 +115,50 @@
     gap: 16px;
   }
 
+  #faq-section-{{ section.id }} .faq-custom-item {
+    margin: 0;
+  }
+
   #faq-section-{{ section.id }} .faq-custom-trigger {
     width: 100%;
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
+    gap: 16px;
     padding: 15px 22px !important;
+    border: 0 !important;
     border-radius: 10px !important;
     background: #f7f7f7 !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    min-height: 56px;
   }
 
-  /* Vraagtekst */
+  #faq-section-{{ section.id }} .faq-custom-trigger:hover {
+    background: #f7f7f7 !important;
+    color: #000000 !important;
+  }
+
+  #faq-section-{{ section.id }} .faq-custom-trigger:hover .faq-custom-question-text {
+    color: #ededed !important;
+  }
+
   #faq-section-{{ section.id }} .faq-custom-question-text {
     font-family: "Montserrat", sans-serif !important;
     font-size: 14px !important;
-    line-height: 1.35 !important;
+    line-height: 1.32 !important;
     font-weight: 600 !important;
     letter-spacing: 0.18em !important;
     text-transform: uppercase !important;
     color: #000000 !important;
+    flex: 1 1 auto;
+    transition: none !important;
   }
 
-  /* HOVER (origineel behouden) */
-  #faq-section-{{ section.id }} .faq-custom-trigger:hover .faq-custom-question-text {
-    color: #ededed !important;
+  #faq-section-{{ section.id }} .collapsible-trigger__icon,
+  #faq-section-{{ section.id }} .collapsible-trigger .icon,
+  #faq-section-{{ section.id }} .faq-custom-trigger svg {
+    display: none !important;
   }
 
   #faq-section-{{ section.id }} .faq-custom-arrow {
@@ -143,47 +167,79 @@
     border-top: 2px solid #000000;
     border-right: 2px solid #000000;
     transform: rotate(45deg);
+    flex: 0 0 auto;
     transition: transform 0.2s ease !important;
+    margin-left: 12px;
   }
 
   #faq-section-{{ section.id }} .faq-custom-trigger.is-open .faq-custom-arrow {
     transform: rotate(135deg);
   }
 
-  #faq-section-{{ section.id }} .faq-custom-answer {
-    padding: 14px 22px 4px 22px !important;
-    font-size: 14px !important;
-    line-height: 1.65 !important;
-    color: #000000 !important;
-    opacity: 0;
-    transition: opacity 0.28s ease !important;
+  #faq-section-{{ section.id }} .faq-custom-content {
+    background: transparent !important;
   }
 
-  /* Antwoordtekst */
+  #faq-section-{{ section.id }} .faq-custom-answer {
+    padding: 14px 22px 4px 22px !important;
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+    color: #000000 !important;
+  }
+
   #faq-section-{{ section.id }} .faq-custom-answer,
   #faq-section-{{ section.id }} .faq-custom-answer p {
     font-family: "Montserrat", sans-serif !important;
-    font-size: 14px !important;
-    line-height: 1.65 !important;
-    font-weight: 450 !important;
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+    font-weight: 400 !important;
+    letter-spacing: 0 !important;
     color: #000000 !important;
     margin: 0 !important;
   }
 
-  #faq-section-{{ section.id }} .faq-custom-trigger.is-open + .faq-custom-content .faq-custom-answer {
-    opacity: 1;
+  #faq-section-{{ section.id }} .faq-custom-answer p + p {
+    margin-top: 12px !important;
   }
 
   @media only screen and (max-width: 768px) {
+    #faq-section-{{ section.id }} {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+    }
+
+    #faq-section-{{ section.id }} .faq-custom-header {
+      margin-bottom: 22px;
+    }
+
+    #faq-section-{{ section.id }} .faq-custom-title {
+      font-family: "Tenor Sans", sans-serif !important;
+      font-size: 32px !important;
+      line-height: 1.08 !important;
+      margin-bottom: 12px !important;
+    }
+
+    #faq-section-{{ section.id }} .faq-custom-list {
+      gap: 16px;
+    }
+
+    #faq-section-{{ section.id }} .faq-custom-trigger {
+      padding: 15px 22px !important;
+      min-height: 56px;
+      border-radius: 10px !important;
+    }
+
     #faq-section-{{ section.id }} .faq-custom-question-text {
       font-size: 14px !important;
+      line-height: 1.32 !important;
       font-weight: 600 !important;
+      letter-spacing: 0.18em !important;
     }
 
     #faq-section-{{ section.id }} .faq-custom-answer,
     #faq-section-{{ section.id }} .faq-custom-answer p {
-      font-size: 14px !important;
-      font-weight: 450 !important;
+      font-size: 13px !important;
+      line-height: 1.58 !important;
     }
   }
 </style>
@@ -227,17 +283,76 @@
   "blocks": [
     {
       "type": "rich-text",
-      "name": "t:sections.faq.blocks.rich_text.name"
+      "name": "t:sections.faq.blocks.rich_text.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.faq.blocks.rich_text.settings.title.label",
+          "default": "Rich text"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:sections.faq.blocks.rich_text.settings.text.label",
+          "default": "<p>Use this section for any descriptive text you need to fill out your pages or to add introductory headings between other blocks.</p>"
+        },
+        {
+          "type": "select",
+          "id": "align_text",
+          "label": "t:sections.faq.blocks.rich_text.settings.align_text.label",
+          "default": "left",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "question",
-      "name": "t:sections.faq.blocks.question.name"
+      "name": "t:sections.faq.blocks.question.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.faq.blocks.question.settings.title.label",
+          "default": "Frequently asked question"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:sections.faq.blocks.question.settings.text.label",
+          "default": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
+        }
+      ]
     }
   ],
   "presets": [
     {
-      "name": "FAQ"
+      "name": "t:sections.faq.presets.faq.name",
+      "blocks": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "question"
+        }
+      ]
     }
-  ]
+  ],
+  "disabled_on": {
+    "groups": ["footer", "header", "custom.popups"]
+  }
 }
 {% endschema %}
