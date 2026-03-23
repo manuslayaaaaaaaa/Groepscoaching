@@ -460,29 +460,35 @@
     }
 
     @media screen and (max-width: 749px) {
-      .shipping-bar {
-        padding: 8px 12px;
-        border-radius: 12px;
+        .shipping-bar {
+          padding: 8px 12px;
+          border-radius: 12px;
+        }
+
+        .shipping-bar__text,
+        .shipping-bar__shipping-text {
+          font-size: 13px;
+        }
+
+        .shipping-bar__pulse {
+          width: 8px;
+          height: 8px;
+          min-width: 8px;
+        }
+
+        .shipping-bar__flag {
+          width: 16px;
+          height: 16px;
+          min-width: 16px;
+        }
       }
 
-      .shipping-bar__text,
-      .shipping-bar__shipping-text {
-        font-size: 13px;
+      /* Verberg automatisch geïnjecteerde badges binnen de form */
+      form .ultimateTrustBadgesWidgetDiv,
+      .product-form .ultimateTrustBadgesWidgetDiv {
+        display: none !important;
       }
-
-      .shipping-bar__pulse {
-        width: 8px;
-        height: 8px;
-        min-width: 8px;
-      }
-
-      .shipping-bar__flag {
-        width: 16px;
-        height: 16px;
-        min-width: 16px;
-      }
-    }
-  </style>
+    </style>
                   {%- when 'sales_point' -%}
                     {%- unless block.settings.text == blank -%}
                       <div class="product-block product-block--sales-point" {{ block.shopify_attributes }}>
